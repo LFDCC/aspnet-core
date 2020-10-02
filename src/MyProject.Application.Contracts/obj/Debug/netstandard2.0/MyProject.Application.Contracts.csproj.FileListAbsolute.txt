@@ -1,0 +1,12 @@
+D:\VS\aspnet-core\src\MyProject.Application.Contracts\bin\Debug\netstandard2.0\MyProject.Application.Contracts.deps.json
+D:\VS\aspnet-core\src\MyProject.Application.Contracts\bin\Debug\netstandard2.0\MyProject.Application.Contracts.dll
+D:\VS\aspnet-core\src\MyProject.Application.Contracts\bin\Debug\netstandard2.0\MyProject.Application.Contracts.pdb
+D:\VS\aspnet-core\src\MyProject.Application.Contracts\bin\Debug\netstandard2.0\MyProject.Domain.Shared.dll
+D:\VS\aspnet-core\src\MyProject.Application.Contracts\bin\Debug\netstandard2.0\MyProject.Domain.Shared.pdb
+D:\VS\aspnet-core\src\MyProject.Application.Contracts\obj\Debug\netstandard2.0\MyProject.Application.Contracts.csprojAssemblyReference.cache
+D:\VS\aspnet-core\src\MyProject.Application.Contracts\obj\Debug\netstandard2.0\MyProject.Application.Contracts.AssemblyInfoInputs.cache
+D:\VS\aspnet-core\src\MyProject.Application.Contracts\obj\Debug\netstandard2.0\MyProject.Application.Contracts.AssemblyInfo.cs
+D:\VS\aspnet-core\src\MyProject.Application.Contracts\obj\Debug\netstandard2.0\MyProject.Application.Contracts.csproj.CoreCompileInputs.cache
+D:\VS\aspnet-core\src\MyProject.Application.Contracts\obj\Debug\netstandard2.0\MyProject.Application.Contracts.csproj.CopyComplete
+D:\VS\aspnet-core\src\MyProject.Application.Contracts\obj\Debug\netstandard2.0\MyProject.Application.Contracts.dll
+D:\VS\aspnet-core\src\MyProject.Application.Contracts\obj\Debug\netstandard2.0\MyProject.Application.Contracts.pdb

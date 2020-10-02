@@ -1,0 +1,12 @@
+D:\VS\aspnet-core\src\MyProject.Domain\bin\Debug\netcoreapp3.1\MyProject.Domain.deps.json
+D:\VS\aspnet-core\src\MyProject.Domain\bin\Debug\netcoreapp3.1\MyProject.Domain.dll
+D:\VS\aspnet-core\src\MyProject.Domain\bin\Debug\netcoreapp3.1\MyProject.Domain.pdb
+D:\VS\aspnet-core\src\MyProject.Domain\bin\Debug\netcoreapp3.1\MyProject.Domain.Shared.dll
+D:\VS\aspnet-core\src\MyProject.Domain\bin\Debug\netcoreapp3.1\MyProject.Domain.Shared.pdb
+D:\VS\aspnet-core\src\MyProject.Domain\obj\Debug\netcoreapp3.1\MyProject.Domain.csprojAssemblyReference.cache
+D:\VS\aspnet-core\src\MyProject.Domain\obj\Debug\netcoreapp3.1\MyProject.Domain.AssemblyInfoInputs.cache
+D:\VS\aspnet-core\src\MyProject.Domain\obj\Debug\netcoreapp3.1\MyProject.Domain.AssemblyInfo.cs
+D:\VS\aspnet-core\src\MyProject.Domain\obj\Debug\netcoreapp3.1\MyProject.Domain.csproj.CoreCompileInputs.cache
+D:\VS\aspnet-core\src\MyProject.Domain\obj\Debug\netcoreapp3.1\MyProject.Domain.csproj.CopyComplete
+D:\VS\aspnet-core\src\MyProject.Domain\obj\Debug\netcoreapp3.1\MyProject.Domain.dll
+D:\VS\aspnet-core\src\MyProject.Domain\obj\Debug\netcoreapp3.1\MyProject.Domain.pdb

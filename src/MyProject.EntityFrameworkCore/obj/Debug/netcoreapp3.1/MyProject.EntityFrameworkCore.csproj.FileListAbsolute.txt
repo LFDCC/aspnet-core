@@ -1,0 +1,14 @@
+D:\VS\aspnet-core\src\MyProject.EntityFrameworkCore\bin\Debug\netcoreapp3.1\MyProject.EntityFrameworkCore.deps.json
+D:\VS\aspnet-core\src\MyProject.EntityFrameworkCore\bin\Debug\netcoreapp3.1\MyProject.EntityFrameworkCore.dll
+D:\VS\aspnet-core\src\MyProject.EntityFrameworkCore\bin\Debug\netcoreapp3.1\MyProject.EntityFrameworkCore.pdb
+D:\VS\aspnet-core\src\MyProject.EntityFrameworkCore\bin\Debug\netcoreapp3.1\MyProject.Domain.dll
+D:\VS\aspnet-core\src\MyProject.EntityFrameworkCore\bin\Debug\netcoreapp3.1\MyProject.Domain.Shared.dll
+D:\VS\aspnet-core\src\MyProject.EntityFrameworkCore\bin\Debug\netcoreapp3.1\MyProject.Domain.pdb
+D:\VS\aspnet-core\src\MyProject.EntityFrameworkCore\bin\Debug\netcoreapp3.1\MyProject.Domain.Shared.pdb
+D:\VS\aspnet-core\src\MyProject.EntityFrameworkCore\obj\Debug\netcoreapp3.1\MyProject.EntityFrameworkCore.csprojAssemblyReference.cache
+D:\VS\aspnet-core\src\MyProject.EntityFrameworkCore\obj\Debug\netcoreapp3.1\MyProject.EntityFrameworkCore.AssemblyInfoInputs.cache
+D:\VS\aspnet-core\src\MyProject.EntityFrameworkCore\obj\Debug\netcoreapp3.1\MyProject.EntityFrameworkCore.AssemblyInfo.cs
+D:\VS\aspnet-core\src\MyProject.EntityFrameworkCore\obj\Debug\netcoreapp3.1\MyProject.EntityFrameworkCore.csproj.CoreCompileInputs.cache
+D:\VS\aspnet-core\src\MyProject.EntityFrameworkCore\obj\Debug\netcoreapp3.1\MyProject.EntityFrameworkCore.csproj.CopyComplete
+D:\VS\aspnet-core\src\MyProject.EntityFrameworkCore\obj\Debug\netcoreapp3.1\MyProject.EntityFrameworkCore.dll
+D:\VS\aspnet-core\src\MyProject.EntityFrameworkCore\obj\Debug\netcoreapp3.1\MyProject.EntityFrameworkCore.pdb
