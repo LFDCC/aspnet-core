@@ -41,23 +41,18 @@ namespace MyProject
             var configuration = context.Services.GetConfiguration();
             var hostingEnvironment = context.Services.GetHostingEnvironment();
 
-            ConfigureUrls(configuration);
             ConfigureConventionalControllers();
             ConfigureAuthentication(context, configuration);
+            ConfigureAuthorization(context, configuration);
             ConfigureLocalization();
             ConfigureVirtualFileSystem(context);
             ConfigureCors(context, configuration);
             ConfigureSwaggerServices(context);
         }
-
-        private void ConfigureUrls(IConfiguration configuration)
-        {
-            //Configure<AppUrlOptions>(options =>
-            //{
-            //    options.Applications["MVC"].RootUrl = configuration["App:SelfUrl"];
-            //});
-        }
-
+        /// <summary>
+        /// 虚拟文件系统
+        /// </summary>
+        /// <param name="context"></param>
         private void ConfigureVirtualFileSystem(ServiceConfigurationContext context)
         {
             var hostingEnvironment = context.Services.GetHostingEnvironment();
@@ -73,7 +68,10 @@ namespace MyProject
                 });
             }
         }
-
+        /// <summary>
+        /// ApplicationService Convert Controller
+        /// 自动Api控制器
+        /// </summary>
         private void ConfigureConventionalControllers()
         {
             Configure<AbpAspNetCoreMvcOptions>(options =>
@@ -82,6 +80,11 @@ namespace MyProject
             });
         }
 
+        /// <summary>
+        /// 认证
+        /// </summary>
+        /// <param name="context"></param>
+        /// <param name="configuration"></param>
         private void ConfigureAuthentication(ServiceConfigurationContext context, IConfiguration configuration)
         {
             context.Services.Configure<JwtSetting>(configuration.GetSection("JwtSetting"));
@@ -104,7 +107,37 @@ namespace MyProject
                 };
             });
         }
-
+        /// <summary>
+        /// 授权
+        /// </summary>
+        /// <param name="context"></param>
+        /// <param name="configuration"></param>
+        private void ConfigureAuthorization(ServiceConfigurationContext context, IConfiguration configuration)
+        {
+            context.Services.AddAuthorization(options =>
+            {
+                options.AddPolicy("admin", policy =>
+                {
+                    policy.RequireRole("admin");
+                });
+                options.AddPolicy("teacher", policy =>
+                {
+                    policy.RequireRole("teacher");
+                });
+                options.AddPolicy("student", policy =>
+                {
+                    policy.RequireRole("student");
+                });
+                options.AddPolicy("teacher_student", policy =>
+                {
+                    policy.RequireRole("teacher", "student");
+                });
+            });
+        }
+        /// <summary>
+        /// 配置Swagger
+        /// </summary>
+        /// <param name="context"></param>
         private static void ConfigureSwaggerServices(ServiceConfigurationContext context)
         {
             context.Services.AddSwaggerGen(
@@ -115,6 +148,9 @@ namespace MyProject
                 });
         }
 
+        /// <summary>
+        /// 本地化
+        /// </summary>
         private void ConfigureLocalization()
         {
             Configure<AbpLocalizationOptions>(options =>
@@ -129,7 +165,11 @@ namespace MyProject
                 options.Languages.Add(new LanguageInfo("zh-Hant", "zh-Hant", "繁體中文"));
             });
         }
-
+        /// <summary>
+        /// 跨域
+        /// </summary>
+        /// <param name="context"></param>
+        /// <param name="configuration"></param>
         private void ConfigureCors(ServiceConfigurationContext context, IConfiguration configuration)
         {
             context.Services.AddCors(options =>
@@ -164,24 +204,13 @@ namespace MyProject
 
             app.UseAbpRequestLocalization();
 
-            if (!env.IsDevelopment())
-            {
-                //app.UseErrorPage();
-            }
 
             app.UseCorrelationId();
             app.UseVirtualFiles();
             app.UseRouting();
             app.UseCors(DefaultCorsPolicyName);
             app.UseAuthentication();
-            //app.UseJwtTokenMiddleware();
 
-            //if (MultiTenancyConsts.IsEnabled)
-            //{
-            //    app.UseMultiTenancy();
-            //}
-
-            //app.UseIdentityServer();
             app.UseAuthorization();
 
             app.UseSwagger();
@@ -191,7 +220,7 @@ namespace MyProject
             });
 
             app.UseAuditing();
-            //app.UseAbpSerilogEnrichers();
+
             app.UseConfiguredEndpoints();
         }
     }
