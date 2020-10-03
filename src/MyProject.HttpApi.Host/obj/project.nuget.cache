@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "/GK5lhkgQwRavw/vvjUk33Nni4zasUMd8d8jjDpf7LixrILIopo/A5KMD7KzZvlxE99BrI5GhfY/GA1kKu2ruA==",
+  "dgSpecHash": "7YefCHYJm6Mc/BkpTwnwwi9vPkO5i7qAvZ51F0n7QCswmKXeTkGnuNFbxF7ufFbQe6k/3W+wLvZ6EzH7cvIXMQ==",
   "success": true,
   "projectFilePath": "D:\\VS\\aspnet-core\\src\\MyProject.HttpApi.Host\\MyProject.HttpApi.Host.csproj",
   "expectedPackageFiles": [
@@ -21,8 +21,8 @@
     "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\3.1.6\\microsoft.aspnetcore.cryptography.keyderivation.3.1.6.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.aspnetcore.hosting.abstractions\\2.0.0\\microsoft.aspnetcore.hosting.abstractions.2.0.0.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.aspnetcore.hosting.server.abstractions\\2.0.0\\microsoft.aspnetcore.hosting.server.abstractions.2.0.0.nupkg.sha512",
-    "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.aspnetcore.http.abstractions\\2.0.0\\microsoft.aspnetcore.http.abstractions.2.0.0.nupkg.sha512",
-    "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.aspnetcore.http.features\\2.0.0\\microsoft.aspnetcore.http.features.2.0.0.nupkg.sha512",
+    "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.aspnetcore.http.abstractions\\2.2.0\\microsoft.aspnetcore.http.abstractions.2.2.0.nupkg.sha512",
+    "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.aspnetcore.http.features\\2.2.0\\microsoft.aspnetcore.http.features.2.2.0.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.aspnetcore.jsonpatch\\3.1.6\\microsoft.aspnetcore.jsonpatch.3.1.6.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.aspnetcore.metadata\\3.1.6\\microsoft.aspnetcore.metadata.3.1.6.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.aspnetcore.mvc.newtonsoftjson\\3.1.6\\microsoft.aspnetcore.mvc.newtonsoftjson.3.1.6.nupkg.sha512",

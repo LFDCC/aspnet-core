@@ -1,10 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "3hdz3P1joHINjag5O+63i5/8L7KCg5aLFihizax5++W+6LxNB+o2e07vkZcim43ZCGpe7dSpOCa28qlktwybFg==",
+  "dgSpecHash": "d2I4CEipWZSoCHxP2aajRiVxcDgCHKI91aHDUKceIkAzD+96J00qsVwI4CTZVZe6iWdqT/r1V2a5+5kk1wa09g==",
   "success": true,
   "projectFilePath": "D:\\VS\\aspnet-core\\src\\MyProject.Domain.Shared\\MyProject.Domain.Shared.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Administrator\\.nuget\\packages\\jetbrains.annotations\\2020.1.0\\jetbrains.annotations.2020.1.0.nupkg.sha512",
+    "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.aspnetcore.http.abstractions\\2.2.0\\microsoft.aspnetcore.http.abstractions.2.2.0.nupkg.sha512",
+    "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.aspnetcore.http.features\\2.2.0\\microsoft.aspnetcore.http.features.2.2.0.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.extensions.configuration\\3.1.6\\microsoft.extensions.configuration.3.1.6.nupkg.sha512",

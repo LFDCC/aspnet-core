@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -15,6 +16,7 @@ using Microsoft.OpenApi.Models;
 
 using MyProject.EntityFrameworkCore;
 using MyProject.JwtSetttings;
+using MyProject.Extensions;
 
 using Volo.Abp;
 using Volo.Abp.AspNetCore.Mvc;
@@ -22,6 +24,8 @@ using Volo.Abp.Autofac;
 using Volo.Abp.Localization;
 using Volo.Abp.Modularity;
 using Volo.Abp.VirtualFileSystem;
+
+using Newtonsoft.Json;
 
 namespace MyProject
 {
@@ -105,6 +109,24 @@ namespace MyProject
                     ValidIssuer = setting.Issuer,
                     ValidAudience = setting.AccessAudience,
                 };
+                // 应用程序提供的对象，用于处理承载引发的事件，身份验证处理程序
+                options.Events = new JwtBearerEvents
+                {
+                    OnChallenge = async context =>
+                    {
+                        // 跳过默认的处理逻辑，返回下面的模型数据
+                        context.HandleResponse();
+
+                        context.Response.ContentType = "application/json;charset=utf-8";
+                        context.Response.StatusCode = StatusCodes.Status200OK;
+
+                        var result = new { 
+                            message= "UnAuthorized"
+                        };
+
+                        await context.Response.WriteAsync(result.ToJson());
+                    }
+                };
             });
         }
         /// <summary>
@@ -143,7 +165,42 @@ namespace MyProject
             context.Services.AddSwaggerGen(
                 options =>
                 {
-                    options.SwaggerDoc("v1", new OpenApiInfo { Title = "MyProject API", Version = "v1" });
+                    options.SwaggerDoc("v1", new OpenApiInfo
+                    {
+                        Version = "v1",
+                        Title = "接口说明文档",
+                        Description = "OpenApi 接口说明文档",
+                        Contact = new OpenApiContact
+                        {
+                            Name = "OpenApi",
+                            Email = "1584329729@qq.com",
+                            Url = new Uri("http://www.baidu.com"),
+                        },
+                    });
+
+                    options.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme()
+                    {
+                        Description = "在下框中输入请求头中需要添加Jwt授权Token：Bearer Token",
+                        Name = "Authorization",
+                        In = ParameterLocation.Header,
+                        Type = SecuritySchemeType.ApiKey,
+                        BearerFormat = "JWT",
+                        Scheme = "Bearer"
+                    });
+
+                    options.AddSecurityRequirement(new OpenApiSecurityRequirement
+                    {
+                        {
+                            new OpenApiSecurityScheme
+                            {
+                                Reference = new OpenApiReference {
+                                    Type = ReferenceType.SecurityScheme,
+                                    Id = "Bearer"
+                                }
+                            },
+                            new string[] { }
+                        }    
+                    });
                     options.DocInclusionPredicate((docName, description) => true);
                 });
         }

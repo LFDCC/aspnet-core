@@ -7,4 +7,3 @@ D:\VS\aspnet-core\src\MyProject.Domain.Shared\obj\Debug\netstandard2.0\MyProject
 D:\VS\aspnet-core\src\MyProject.Domain.Shared\obj\Debug\netstandard2.0\MyProject.Domain.Shared.dll
 D:\VS\aspnet-core\src\MyProject.Domain.Shared\obj\Debug\netstandard2.0\MyProject.Domain.Shared.pdb
 D:\VS\aspnet-core\src\MyProject.Domain.Shared\obj\Debug\netstandard2.0\MyProject.Domain.Shared.csproj.CoreCompileInputs.cache
-D:\VS\aspnet-core\src\MyProject.Domain.Shared\obj\Debug\netstandard2.0\MyProject.Domain.Shared.csprojAssemblyReference.cache

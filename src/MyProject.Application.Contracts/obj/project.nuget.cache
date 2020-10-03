@@ -1,11 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "8tNDaxYAsljH3S6JjzLdzdLmXIfOpKwcid652xgsoDfg/MsXebFFzOrWJ+sq+RbwDS5vfBEBYprJe1P+Qy7PZQ==",
+  "dgSpecHash": "PtG5T4R+UbxH4dYW+1RGgTCSrZpf+HK/eBd4tmtCpWl0uWaGvBZHYYIil3QrcnGpSOxUCinV2sWJrjQkO9IfLA==",
   "success": true,
   "projectFilePath": "D:\\VS\\aspnet-core\\src\\MyProject.Application.Contracts\\MyProject.Application.Contracts.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Administrator\\.nuget\\packages\\jetbrains.annotations\\2020.1.0\\jetbrains.annotations.2020.1.0.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.aspnetcore.authorization\\3.1.6\\microsoft.aspnetcore.authorization.3.1.6.nupkg.sha512",
+    "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.aspnetcore.http.abstractions\\2.2.0\\microsoft.aspnetcore.http.abstractions.2.2.0.nupkg.sha512",
+    "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.aspnetcore.http.features\\2.2.0\\microsoft.aspnetcore.http.features.2.2.0.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.aspnetcore.metadata\\3.1.6\\microsoft.aspnetcore.metadata.3.1.6.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",

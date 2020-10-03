@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "zXP63M4Th7BL2ocdZQaL3uNlsrG6fONOJiLKkJZMYLsGDYg/qehcF+ZLQRUNYL9jDWNXGiVfzkyZzSN1br3sng==",
+  "dgSpecHash": "mMSe5GNckDUnIUsGQOhm0qayrD3LN0GTzBHGACFVDGGgUOzQztY9jGg0EZS9+jrLYfkJeNi4crNF3QiHJ8Ft2g==",
   "success": true,
   "projectFilePath": "D:\\VS\\aspnet-core\\src\\MyProject.DbMigrator\\MyProject.DbMigrator.csproj",
   "expectedPackageFiles": [
@@ -18,6 +18,8 @@
     "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.aspnetcore.authorization\\3.1.6\\microsoft.aspnetcore.authorization.3.1.6.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\3.1.6\\microsoft.aspnetcore.cryptography.internal.3.1.6.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\3.1.6\\microsoft.aspnetcore.cryptography.keyderivation.3.1.6.nupkg.sha512",
+    "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.aspnetcore.http.abstractions\\2.2.0\\microsoft.aspnetcore.http.abstractions.2.2.0.nupkg.sha512",
+    "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.aspnetcore.http.features\\2.2.0\\microsoft.aspnetcore.http.features.2.2.0.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.aspnetcore.metadata\\3.1.6\\microsoft.aspnetcore.metadata.3.1.6.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.bcl.hashcode\\1.1.0\\microsoft.bcl.hashcode.1.1.0.nupkg.sha512",

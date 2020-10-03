@@ -10,7 +10,7 @@ using Volo.Abp.DependencyInjection;
 
 namespace MyProject.JwtSetttings
 {
-    public class TokenService : ITokenService, ITransientDependency
+    public class TokenService : ITokenService, IScopedDependency
     {
         readonly JwtSetting jwtSetting;
         public TokenService(IOptions<JwtSetting> options)
