@@ -15678,3 +15678,531 @@ WHERE ((@__ef_filter__p_0 = CAST(1 AS bit)) OR ([a].[IsDeleted] <> CAST(1 AS bit
 2020-10-06 14:12:54.532 +08:00 [INF] CORS policy execution successful.
 2020-10-06 14:12:54.534 +08:00 [INF] Successfully validated the token.
 2020-10-06 14:12:54.538 +08:00 [INF] Request finished in 6.9203ms 404 
+2020-10-06 16:30:47.832 +08:00 [INF] Starting MyProject.HttpApi.Host.
+2020-10-06 16:30:52.327 +08:00 [INF] User profile is available. Using 'C:\Users\Administrator\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-10-06 16:30:52.488 +08:00 [INF] Loaded ABP modules:
+2020-10-06 16:30:52.488 +08:00 [INF] - MyProject.MyProjectDomainSharedModule
+2020-10-06 16:30:52.488 +08:00 [INF] - Volo.Abp.Localization.AbpLocalizationAbstractionsModule
+2020-10-06 16:30:52.488 +08:00 [INF] - Volo.Abp.Validation.AbpValidationAbstractionsModule
+2020-10-06 16:30:52.488 +08:00 [INF] - Volo.Abp.ObjectExtending.AbpObjectExtendingModule
+2020-10-06 16:30:52.488 +08:00 [INF] - MyProject.MyProjectApplicationContractsModule
+2020-10-06 16:30:52.488 +08:00 [INF] - MyProject.MyProjectHttpApiModule
+2020-10-06 16:30:52.488 +08:00 [INF] - Volo.Abp.Castle.AbpCastleCoreModule
+2020-10-06 16:30:52.488 +08:00 [INF] - Volo.Abp.Autofac.AbpAutofacModule
+2020-10-06 16:30:52.488 +08:00 [INF] - MyProject.MyProjectDomainModule
+2020-10-06 16:30:52.488 +08:00 [INF] - Volo.Abp.ObjectMapping.AbpObjectMappingModule
+2020-10-06 16:30:52.488 +08:00 [INF] - Volo.Abp.Uow.AbpUnitOfWorkModule
+2020-10-06 16:30:52.488 +08:00 [INF] - Volo.Abp.Data.AbpDataModule
+2020-10-06 16:30:52.488 +08:00 [INF] - Volo.Abp.VirtualFileSystem.AbpVirtualFileSystemModule
+2020-10-06 16:30:52.488 +08:00 [INF] - Volo.Abp.Security.AbpSecurityModule
+2020-10-06 16:30:52.488 +08:00 [INF] - Volo.Abp.MultiTenancy.AbpMultiTenancyModule
+2020-10-06 16:30:52.488 +08:00 [INF] - Volo.Abp.Settings.AbpSettingsModule
+2020-10-06 16:30:52.488 +08:00 [INF] - Volo.Abp.Timing.AbpTimingModule
+2020-10-06 16:30:52.488 +08:00 [INF] - Volo.Abp.Json.AbpJsonModule
+2020-10-06 16:30:52.488 +08:00 [INF] - Volo.Abp.Threading.AbpThreadingModule
+2020-10-06 16:30:52.488 +08:00 [INF] - Volo.Abp.Auditing.AbpAuditingModule
+2020-10-06 16:30:52.488 +08:00 [INF] - Volo.Abp.AutoMapper.AbpAutoMapperModule
+2020-10-06 16:30:52.488 +08:00 [INF] - MyProject.MyProjectApplicationModule
+2020-10-06 16:30:52.488 +08:00 [INF] - Volo.Abp.EventBus.AbpEventBusModule
+2020-10-06 16:30:52.488 +08:00 [INF] - Volo.Abp.Guids.AbpGuidsModule
+2020-10-06 16:30:52.488 +08:00 [INF] - Volo.Abp.Domain.AbpDddDomainModule
+2020-10-06 16:30:52.488 +08:00 [INF] - Volo.Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule
+2020-10-06 16:30:52.488 +08:00 [INF] - Volo.Abp.EntityFrameworkCore.SqlServer.AbpEntityFrameworkCoreSqlServerModule
+2020-10-06 16:30:52.488 +08:00 [INF] - MyProject.EntityFrameworkCore.MyProjectEntityFrameworkCoreModule
+2020-10-06 16:30:52.488 +08:00 [INF] - MyProject.EntityFrameworkCore.MyProjectEntityFrameworkCoreDbMigrationsModule
+2020-10-06 16:30:52.488 +08:00 [INF] - Volo.Abp.Http.AbpHttpAbstractionsModule
+2020-10-06 16:30:52.488 +08:00 [INF] - Volo.Abp.Minify.AbpMinifyModule
+2020-10-06 16:30:52.488 +08:00 [INF] - Volo.Abp.Http.AbpHttpModule
+2020-10-06 16:30:52.488 +08:00 [INF] - Volo.Abp.Authorization.AbpAuthorizationModule
+2020-10-06 16:30:52.488 +08:00 [INF] - Volo.Abp.Localization.AbpLocalizationModule
+2020-10-06 16:30:52.488 +08:00 [INF] - Volo.Abp.UI.AbpUiModule
+2020-10-06 16:30:52.488 +08:00 [INF] - Volo.Abp.Validation.AbpValidationModule
+2020-10-06 16:30:52.488 +08:00 [INF] - Volo.Abp.AspNetCore.AbpAspNetCoreModule
+2020-10-06 16:30:52.488 +08:00 [INF] - Volo.Abp.ApiVersioning.AbpApiVersioningAbstractionsModule
+2020-10-06 16:30:52.488 +08:00 [INF] - Volo.Abp.Application.AbpDddApplicationContractsModule
+2020-10-06 16:30:52.488 +08:00 [INF] - Volo.Abp.Features.AbpFeaturesModule
+2020-10-06 16:30:52.488 +08:00 [INF] - Volo.Abp.Application.AbpDddApplicationModule
+2020-10-06 16:30:52.488 +08:00 [INF] - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcContractsModule
+2020-10-06 16:30:52.488 +08:00 [INF] - Volo.Abp.GlobalFeatures.AbpGlobalFeaturesModule
+2020-10-06 16:30:52.488 +08:00 [INF] - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcModule
+2020-10-06 16:30:52.488 +08:00 [INF] - MyProject.MyProjectHttpApiHostModule
+2020-10-06 16:30:53.304 +08:00 [INF] Initialized all ABP modules.
+2020-10-06 16:30:53.544 +08:00 [INF] Now listening on: https://localhost:44394
+2020-10-06 16:30:53.549 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-10-06 16:30:53.549 +08:00 [INF] Hosting environment: Development
+2020-10-06 16:30:53.549 +08:00 [INF] Content root path: D:\VS\aspnet-core\src\MyProject.HttpApi.Host
+2020-10-06 16:30:54.921 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:44394/  
+2020-10-06 16:30:55.394 +08:00 [INF] Executing endpoint 'MyProject.Controllers.HomeController.Index (MyProject.HttpApi.Host)'
+2020-10-06 16:30:55.529 +08:00 [INF] Route matched with {action = "Index", controller = "Home", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult Index() on controller MyProject.Controllers.HomeController (MyProject.HttpApi.Host).
+2020-10-06 16:30:55.594 +08:00 [INF] Executing RedirectResult, redirecting to /swagger.
+2020-10-06 16:30:55.604 +08:00 [INF] Executed action MyProject.Controllers.HomeController.Index (MyProject.HttpApi.Host) in 65.4248ms
+2020-10-06 16:30:55.604 +08:00 [INF] Executed endpoint 'MyProject.Controllers.HomeController.Index (MyProject.HttpApi.Host)'
+2020-10-06 16:30:55.626 +08:00 [INF] Request finished in 722.5745ms 302 
+2020-10-06 16:30:55.658 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:44394/swagger/index.html  
+2020-10-06 16:30:55.709 +08:00 [INF] Request finished in 51.4012ms 200 text/html;charset=utf-8
+2020-10-06 16:30:55.962 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:44394/swagger/v1/swagger.json  
+2020-10-06 16:30:56.317 +08:00 [INF] Request finished in 355.2839ms 200 application/json;charset=utf-8
+2020-10-06 16:31:08.557 +08:00 [INF] Request starting HTTP/1.1 POST https://localhost:44394/api/Account/login application/json-patch+json 41
+2020-10-06 16:31:08.565 +08:00 [INF] CORS policy execution failed.
+2020-10-06 16:31:08.566 +08:00 [INF] Request origin https://localhost:44394 does not have permission to access the resource.
+2020-10-06 16:31:08.568 +08:00 [INF] Executing endpoint 'MyProject.Controllers.AccountController.Login (MyProject.HttpApi)'
+2020-10-06 16:31:08.607 +08:00 [INF] Route matched with {action = "Login", controller = "Account", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[MyProject.HttpResult.Result`1[MyProject.JwtSetttings.Token]] Login(MyProject.Users.Dtos.LoginDto) on controller MyProject.Controllers.AccountController (MyProject.HttpApi).
+2020-10-06 16:31:09.553 +08:00 [ERR] ---------- RemoteServiceErrorInfo ----------
+{
+  "code": null,
+  "message": "An internal error occurred during your request!",
+  "details": null,
+  "validationErrors": null
+}
+
+2020-10-06 16:31:09.554 +08:00 [ERR] 测试异常
+System.Exception: 测试异常
+   at MyProject.Users.UserAppService.Login(LoginDto loginDto) in D:\VS\aspnet-core\src\MyProject.Application\Users\UserAppService.cs:line 32
+   at Castle.DynamicProxy.AsyncInterceptorBase.ProceedAsynchronous[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo)
+   at Volo.Abp.Castle.DynamicProxy.CastleAbpMethodInvocationAdapterWithReturnValue`1.ProceedAsync()
+   at Volo.Abp.Validation.ValidationInterceptor.InterceptAsync(IAbpMethodInvocation invocation)
+   at Volo.Abp.Castle.DynamicProxy.CastleAsyncAbpInterceptorAdapter`1.InterceptAsync[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo, Func`3 proceed)
+   at Castle.DynamicProxy.AsyncInterceptorBase.ProceedAsynchronous[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo)
+   at Volo.Abp.Castle.DynamicProxy.CastleAbpMethodInvocationAdapterWithReturnValue`1.ProceedAsync()
+   at Volo.Abp.Authorization.AuthorizationInterceptor.InterceptAsync(IAbpMethodInvocation invocation)
+   at Volo.Abp.Castle.DynamicProxy.CastleAsyncAbpInterceptorAdapter`1.InterceptAsync[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo, Func`3 proceed)
+   at Castle.DynamicProxy.AsyncInterceptorBase.ProceedAsynchronous[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo)
+   at Volo.Abp.Castle.DynamicProxy.CastleAbpMethodInvocationAdapterWithReturnValue`1.ProceedAsync()
+   at Volo.Abp.Auditing.AuditingInterceptor.InterceptAsync(IAbpMethodInvocation invocation)
+   at Volo.Abp.Castle.DynamicProxy.CastleAsyncAbpInterceptorAdapter`1.InterceptAsync[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo, Func`3 proceed)
+   at Castle.DynamicProxy.AsyncInterceptorBase.ProceedAsynchronous[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo)
+   at Volo.Abp.Castle.DynamicProxy.CastleAbpMethodInvocationAdapterWithReturnValue`1.ProceedAsync()
+   at Volo.Abp.Uow.UnitOfWorkInterceptor.InterceptAsync(IAbpMethodInvocation invocation)
+   at Volo.Abp.Castle.DynamicProxy.CastleAsyncAbpInterceptorAdapter`1.InterceptAsync[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo, Func`3 proceed)
+   at MyProject.Controllers.AccountController.Login(LoginDto loginDto) in D:\VS\aspnet-core\src\MyProject.HttpApi\Controllers\AccountController.cs:line 34
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+2020-10-06 16:31:09.580 +08:00 [INF] Executing ObjectResult, writing value of type 'Volo.Abp.Http.RemoteServiceErrorResponse'.
+2020-10-06 16:31:09.629 +08:00 [INF] Executed action MyProject.Controllers.AccountController.Login (MyProject.HttpApi) in 1022.0206ms
+2020-10-06 16:31:09.629 +08:00 [INF] Executed endpoint 'MyProject.Controllers.AccountController.Login (MyProject.HttpApi)'
+2020-10-06 16:31:09.675 +08:00 [INF] AUDIT LOG: [500: POST   ] /api/Account/login
+- UserName - UserId                 :  - 
+- ClientIpAddress        : ::1
+- ExecutionDuration      : 1066
+- Actions:
+  - MyProject.Users.UserAppService.Login (296 ms.)
+    {"loginDto":{"userName":"string","passWord":"string"}}
+  - MyProject.Controllers.AccountController.Login (445 ms.)
+    {"loginDto":{"userName":"string","passWord":"string"}}
+- Exceptions:
+  - 测试异常
+    System.Exception: 测试异常
+   at MyProject.Users.UserAppService.Login(LoginDto loginDto) in D:\VS\aspnet-core\src\MyProject.Application\Users\UserAppService.cs:line 32
+   at Castle.DynamicProxy.AsyncInterceptorBase.ProceedAsynchronous[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo)
+   at Volo.Abp.Castle.DynamicProxy.CastleAbpMethodInvocationAdapterWithReturnValue`1.ProceedAsync()
+   at Volo.Abp.Validation.ValidationInterceptor.InterceptAsync(IAbpMethodInvocation invocation)
+   at Volo.Abp.Castle.DynamicProxy.CastleAsyncAbpInterceptorAdapter`1.InterceptAsync[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo, Func`3 proceed)
+   at Castle.DynamicProxy.AsyncInterceptorBase.ProceedAsynchronous[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo)
+   at Volo.Abp.Castle.DynamicProxy.CastleAbpMethodInvocationAdapterWithReturnValue`1.ProceedAsync()
+   at Volo.Abp.Authorization.AuthorizationInterceptor.InterceptAsync(IAbpMethodInvocation invocation)
+   at Volo.Abp.Castle.DynamicProxy.CastleAsyncAbpInterceptorAdapter`1.InterceptAsync[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo, Func`3 proceed)
+   at Castle.DynamicProxy.AsyncInterceptorBase.ProceedAsynchronous[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo)
+   at Volo.Abp.Castle.DynamicProxy.CastleAbpMethodInvocationAdapterWithReturnValue`1.ProceedAsync()
+   at Volo.Abp.Auditing.AuditingInterceptor.InterceptAsync(IAbpMethodInvocation invocation)
+   at Volo.Abp.Castle.DynamicProxy.CastleAsyncAbpInterceptorAdapter`1.InterceptAsync[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo, Func`3 proceed)
+   at Castle.DynamicProxy.AsyncInterceptorBase.ProceedAsynchronous[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo)
+   at Volo.Abp.Castle.DynamicProxy.CastleAbpMethodInvocationAdapterWithReturnValue`1.ProceedAsync()
+   at Volo.Abp.Uow.UnitOfWorkInterceptor.InterceptAsync(IAbpMethodInvocation invocation)
+   at Volo.Abp.Castle.DynamicProxy.CastleAsyncAbpInterceptorAdapter`1.InterceptAsync[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo, Func`3 proceed)
+   at MyProject.Controllers.AccountController.Login(LoginDto loginDto) in D:\VS\aspnet-core\src\MyProject.HttpApi\Controllers\AccountController.cs:line 34
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+  - 测试异常
+    System.Exception: 测试异常
+   at MyProject.Users.UserAppService.Login(LoginDto loginDto) in D:\VS\aspnet-core\src\MyProject.Application\Users\UserAppService.cs:line 32
+   at Castle.DynamicProxy.AsyncInterceptorBase.ProceedAsynchronous[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo)
+   at Volo.Abp.Castle.DynamicProxy.CastleAbpMethodInvocationAdapterWithReturnValue`1.ProceedAsync()
+   at Volo.Abp.Validation.ValidationInterceptor.InterceptAsync(IAbpMethodInvocation invocation)
+   at Volo.Abp.Castle.DynamicProxy.CastleAsyncAbpInterceptorAdapter`1.InterceptAsync[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo, Func`3 proceed)
+   at Castle.DynamicProxy.AsyncInterceptorBase.ProceedAsynchronous[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo)
+   at Volo.Abp.Castle.DynamicProxy.CastleAbpMethodInvocationAdapterWithReturnValue`1.ProceedAsync()
+   at Volo.Abp.Authorization.AuthorizationInterceptor.InterceptAsync(IAbpMethodInvocation invocation)
+   at Volo.Abp.Castle.DynamicProxy.CastleAsyncAbpInterceptorAdapter`1.InterceptAsync[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo, Func`3 proceed)
+   at Castle.DynamicProxy.AsyncInterceptorBase.ProceedAsynchronous[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo)
+   at Volo.Abp.Castle.DynamicProxy.CastleAbpMethodInvocationAdapterWithReturnValue`1.ProceedAsync()
+   at Volo.Abp.Auditing.AuditingInterceptor.InterceptAsync(IAbpMethodInvocation invocation)
+   at Volo.Abp.Castle.DynamicProxy.CastleAsyncAbpInterceptorAdapter`1.InterceptAsync[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo, Func`3 proceed)
+   at Castle.DynamicProxy.AsyncInterceptorBase.ProceedAsynchronous[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo)
+   at Volo.Abp.Castle.DynamicProxy.CastleAbpMethodInvocationAdapterWithReturnValue`1.ProceedAsync()
+   at Volo.Abp.Uow.UnitOfWorkInterceptor.InterceptAsync(IAbpMethodInvocation invocation)
+   at Volo.Abp.Castle.DynamicProxy.CastleAsyncAbpInterceptorAdapter`1.InterceptAsync[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo, Func`3 proceed)
+   at MyProject.Controllers.AccountController.Login(LoginDto loginDto) in D:\VS\aspnet-core\src\MyProject.HttpApi\Controllers\AccountController.cs:line 34
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+
+2020-10-06 16:31:09.675 +08:00 [INF] Request finished in 1119.2037ms 500 application/json; charset=utf-8
+2020-10-06 16:49:32.551 +08:00 [INF] Starting MyProject.HttpApi.Host.
+2020-10-06 16:49:37.455 +08:00 [INF] User profile is available. Using 'C:\Users\Administrator\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-10-06 16:49:37.609 +08:00 [INF] Loaded ABP modules:
+2020-10-06 16:49:37.609 +08:00 [INF] - MyProject.MyProjectDomainSharedModule
+2020-10-06 16:49:37.609 +08:00 [INF] - Volo.Abp.Localization.AbpLocalizationAbstractionsModule
+2020-10-06 16:49:37.609 +08:00 [INF] - Volo.Abp.Validation.AbpValidationAbstractionsModule
+2020-10-06 16:49:37.609 +08:00 [INF] - Volo.Abp.ObjectExtending.AbpObjectExtendingModule
+2020-10-06 16:49:37.609 +08:00 [INF] - MyProject.MyProjectApplicationContractsModule
+2020-10-06 16:49:37.609 +08:00 [INF] - MyProject.MyProjectHttpApiModule
+2020-10-06 16:49:37.609 +08:00 [INF] - Volo.Abp.Castle.AbpCastleCoreModule
+2020-10-06 16:49:37.609 +08:00 [INF] - Volo.Abp.Autofac.AbpAutofacModule
+2020-10-06 16:49:37.609 +08:00 [INF] - MyProject.MyProjectDomainModule
+2020-10-06 16:49:37.609 +08:00 [INF] - Volo.Abp.ObjectMapping.AbpObjectMappingModule
+2020-10-06 16:49:37.609 +08:00 [INF] - Volo.Abp.Uow.AbpUnitOfWorkModule
+2020-10-06 16:49:37.609 +08:00 [INF] - Volo.Abp.Data.AbpDataModule
+2020-10-06 16:49:37.609 +08:00 [INF] - Volo.Abp.VirtualFileSystem.AbpVirtualFileSystemModule
+2020-10-06 16:49:37.609 +08:00 [INF] - Volo.Abp.Security.AbpSecurityModule
+2020-10-06 16:49:37.609 +08:00 [INF] - Volo.Abp.MultiTenancy.AbpMultiTenancyModule
+2020-10-06 16:49:37.609 +08:00 [INF] - Volo.Abp.Settings.AbpSettingsModule
+2020-10-06 16:49:37.609 +08:00 [INF] - Volo.Abp.Timing.AbpTimingModule
+2020-10-06 16:49:37.609 +08:00 [INF] - Volo.Abp.Json.AbpJsonModule
+2020-10-06 16:49:37.609 +08:00 [INF] - Volo.Abp.Threading.AbpThreadingModule
+2020-10-06 16:49:37.609 +08:00 [INF] - Volo.Abp.Auditing.AbpAuditingModule
+2020-10-06 16:49:37.609 +08:00 [INF] - Volo.Abp.AutoMapper.AbpAutoMapperModule
+2020-10-06 16:49:37.609 +08:00 [INF] - MyProject.MyProjectApplicationModule
+2020-10-06 16:49:37.609 +08:00 [INF] - Volo.Abp.EventBus.AbpEventBusModule
+2020-10-06 16:49:37.609 +08:00 [INF] - Volo.Abp.Guids.AbpGuidsModule
+2020-10-06 16:49:37.609 +08:00 [INF] - Volo.Abp.Domain.AbpDddDomainModule
+2020-10-06 16:49:37.609 +08:00 [INF] - Volo.Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule
+2020-10-06 16:49:37.609 +08:00 [INF] - Volo.Abp.EntityFrameworkCore.SqlServer.AbpEntityFrameworkCoreSqlServerModule
+2020-10-06 16:49:37.609 +08:00 [INF] - MyProject.EntityFrameworkCore.MyProjectEntityFrameworkCoreModule
+2020-10-06 16:49:37.609 +08:00 [INF] - MyProject.EntityFrameworkCore.MyProjectEntityFrameworkCoreDbMigrationsModule
+2020-10-06 16:49:37.609 +08:00 [INF] - Volo.Abp.Http.AbpHttpAbstractionsModule
+2020-10-06 16:49:37.609 +08:00 [INF] - Volo.Abp.Minify.AbpMinifyModule
+2020-10-06 16:49:37.609 +08:00 [INF] - Volo.Abp.Http.AbpHttpModule
+2020-10-06 16:49:37.609 +08:00 [INF] - Volo.Abp.Authorization.AbpAuthorizationModule
+2020-10-06 16:49:37.609 +08:00 [INF] - Volo.Abp.Localization.AbpLocalizationModule
+2020-10-06 16:49:37.609 +08:00 [INF] - Volo.Abp.UI.AbpUiModule
+2020-10-06 16:49:37.609 +08:00 [INF] - Volo.Abp.Validation.AbpValidationModule
+2020-10-06 16:49:37.609 +08:00 [INF] - Volo.Abp.AspNetCore.AbpAspNetCoreModule
+2020-10-06 16:49:37.609 +08:00 [INF] - Volo.Abp.ApiVersioning.AbpApiVersioningAbstractionsModule
+2020-10-06 16:49:37.609 +08:00 [INF] - Volo.Abp.Application.AbpDddApplicationContractsModule
+2020-10-06 16:49:37.609 +08:00 [INF] - Volo.Abp.Features.AbpFeaturesModule
+2020-10-06 16:49:37.609 +08:00 [INF] - Volo.Abp.Application.AbpDddApplicationModule
+2020-10-06 16:49:37.609 +08:00 [INF] - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcContractsModule
+2020-10-06 16:49:37.609 +08:00 [INF] - Volo.Abp.GlobalFeatures.AbpGlobalFeaturesModule
+2020-10-06 16:49:37.609 +08:00 [INF] - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcModule
+2020-10-06 16:49:37.609 +08:00 [INF] - MyProject.MyProjectHttpApiHostModule
+2020-10-06 16:49:38.439 +08:00 [INF] Initialized all ABP modules.
+2020-10-06 16:49:38.644 +08:00 [INF] Now listening on: https://localhost:44394
+2020-10-06 16:49:38.644 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-10-06 16:49:38.644 +08:00 [INF] Hosting environment: Development
+2020-10-06 16:49:38.645 +08:00 [INF] Content root path: D:\VS\aspnet-core\src\MyProject.HttpApi.Host
+2020-10-06 16:49:40.049 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:44394/  
+2020-10-06 16:49:40.623 +08:00 [INF] Executing endpoint 'MyProject.Controllers.HomeController.Index (MyProject.HttpApi.Host)'
+2020-10-06 16:49:40.750 +08:00 [INF] Route matched with {action = "Index", controller = "Home", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult Index() on controller MyProject.Controllers.HomeController (MyProject.HttpApi.Host).
+2020-10-06 16:49:40.811 +08:00 [INF] Executing RedirectResult, redirecting to /swagger.
+2020-10-06 16:49:40.817 +08:00 [INF] Executed action MyProject.Controllers.HomeController.Index (MyProject.HttpApi.Host) in 61.8562ms
+2020-10-06 16:49:40.817 +08:00 [INF] Executed endpoint 'MyProject.Controllers.HomeController.Index (MyProject.HttpApi.Host)'
+2020-10-06 16:49:40.838 +08:00 [INF] Request finished in 793.3913ms 302 
+2020-10-06 16:49:40.871 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:44394/swagger/index.html  
+2020-10-06 16:49:40.920 +08:00 [INF] Request finished in 49.6078ms 200 text/html;charset=utf-8
+2020-10-06 16:49:41.167 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:44394/swagger/v1/swagger.json  
+2020-10-06 16:49:41.496 +08:00 [INF] Request finished in 329.368ms 200 application/json;charset=utf-8
+2020-10-06 16:49:47.657 +08:00 [INF] Request starting HTTP/1.1 POST https://localhost:44394/api/Account/login application/json-patch+json 41
+2020-10-06 16:49:47.665 +08:00 [INF] CORS policy execution failed.
+2020-10-06 16:49:47.665 +08:00 [INF] Request origin https://localhost:44394 does not have permission to access the resource.
+2020-10-06 16:49:47.667 +08:00 [INF] Executing endpoint 'MyProject.Controllers.AccountController.Login (MyProject.HttpApi)'
+2020-10-06 16:49:47.712 +08:00 [INF] Route matched with {action = "Login", controller = "Account", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[MyProject.HttpResult.Result`1[MyProject.JwtSetttings.Token]] Login(MyProject.Users.Dtos.LoginDto) on controller MyProject.Controllers.AccountController (MyProject.HttpApi).
+2020-10-06 16:49:48.679 +08:00 [ERR] /api/Account/login|测试异常
+2020-10-06 16:49:48.685 +08:00 [INF] Executing ObjectResult, writing value of type 'MyProject.HttpResult.Result`1[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2020-10-06 16:49:48.704 +08:00 [INF] Executed action MyProject.Controllers.AccountController.Login (MyProject.HttpApi) in 991.7534ms
+2020-10-06 16:49:48.705 +08:00 [INF] Executed endpoint 'MyProject.Controllers.AccountController.Login (MyProject.HttpApi)'
+2020-10-06 16:49:48.724 +08:00 [INF] AUDIT LOG: [200: POST   ] /api/Account/login
+- UserName - UserId                 :  - 
+- ClientIpAddress        : ::1
+- ExecutionDuration      : 1041
+- Actions:
+  - MyProject.Users.UserAppService.Login (290 ms.)
+    {"loginDto":{"userName":"string","passWord":"string"}}
+  - MyProject.Controllers.AccountController.Login (437 ms.)
+    {"loginDto":{"userName":"string","passWord":"string"}}
+- Exceptions:
+  - 测试异常
+    System.Exception: 测试异常
+   at MyProject.Users.UserAppService.Login(LoginDto loginDto) in D:\VS\aspnet-core\src\MyProject.Application\Users\UserAppService.cs:line 32
+   at Castle.DynamicProxy.AsyncInterceptorBase.ProceedAsynchronous[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo)
+   at Volo.Abp.Castle.DynamicProxy.CastleAbpMethodInvocationAdapterWithReturnValue`1.ProceedAsync()
+   at Volo.Abp.Validation.ValidationInterceptor.InterceptAsync(IAbpMethodInvocation invocation)
+   at Volo.Abp.Castle.DynamicProxy.CastleAsyncAbpInterceptorAdapter`1.InterceptAsync[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo, Func`3 proceed)
+   at Castle.DynamicProxy.AsyncInterceptorBase.ProceedAsynchronous[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo)
+   at Volo.Abp.Castle.DynamicProxy.CastleAbpMethodInvocationAdapterWithReturnValue`1.ProceedAsync()
+   at Volo.Abp.Authorization.AuthorizationInterceptor.InterceptAsync(IAbpMethodInvocation invocation)
+   at Volo.Abp.Castle.DynamicProxy.CastleAsyncAbpInterceptorAdapter`1.InterceptAsync[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo, Func`3 proceed)
+   at Castle.DynamicProxy.AsyncInterceptorBase.ProceedAsynchronous[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo)
+   at Volo.Abp.Castle.DynamicProxy.CastleAbpMethodInvocationAdapterWithReturnValue`1.ProceedAsync()
+   at Volo.Abp.Auditing.AuditingInterceptor.InterceptAsync(IAbpMethodInvocation invocation)
+   at Volo.Abp.Castle.DynamicProxy.CastleAsyncAbpInterceptorAdapter`1.InterceptAsync[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo, Func`3 proceed)
+   at Castle.DynamicProxy.AsyncInterceptorBase.ProceedAsynchronous[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo)
+   at Volo.Abp.Castle.DynamicProxy.CastleAbpMethodInvocationAdapterWithReturnValue`1.ProceedAsync()
+   at Volo.Abp.Uow.UnitOfWorkInterceptor.InterceptAsync(IAbpMethodInvocation invocation)
+   at Volo.Abp.Castle.DynamicProxy.CastleAsyncAbpInterceptorAdapter`1.InterceptAsync[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo, Func`3 proceed)
+   at MyProject.Controllers.AccountController.Login(LoginDto loginDto) in D:\VS\aspnet-core\src\MyProject.HttpApi\Controllers\AccountController.cs:line 34
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+  - 测试异常
+    System.Exception: 测试异常
+   at MyProject.Users.UserAppService.Login(LoginDto loginDto) in D:\VS\aspnet-core\src\MyProject.Application\Users\UserAppService.cs:line 32
+   at Castle.DynamicProxy.AsyncInterceptorBase.ProceedAsynchronous[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo)
+   at Volo.Abp.Castle.DynamicProxy.CastleAbpMethodInvocationAdapterWithReturnValue`1.ProceedAsync()
+   at Volo.Abp.Validation.ValidationInterceptor.InterceptAsync(IAbpMethodInvocation invocation)
+   at Volo.Abp.Castle.DynamicProxy.CastleAsyncAbpInterceptorAdapter`1.InterceptAsync[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo, Func`3 proceed)
+   at Castle.DynamicProxy.AsyncInterceptorBase.ProceedAsynchronous[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo)
+   at Volo.Abp.Castle.DynamicProxy.CastleAbpMethodInvocationAdapterWithReturnValue`1.ProceedAsync()
+   at Volo.Abp.Authorization.AuthorizationInterceptor.InterceptAsync(IAbpMethodInvocation invocation)
+   at Volo.Abp.Castle.DynamicProxy.CastleAsyncAbpInterceptorAdapter`1.InterceptAsync[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo, Func`3 proceed)
+   at Castle.DynamicProxy.AsyncInterceptorBase.ProceedAsynchronous[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo)
+   at Volo.Abp.Castle.DynamicProxy.CastleAbpMethodInvocationAdapterWithReturnValue`1.ProceedAsync()
+   at Volo.Abp.Auditing.AuditingInterceptor.InterceptAsync(IAbpMethodInvocation invocation)
+   at Volo.Abp.Castle.DynamicProxy.CastleAsyncAbpInterceptorAdapter`1.InterceptAsync[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo, Func`3 proceed)
+   at Castle.DynamicProxy.AsyncInterceptorBase.ProceedAsynchronous[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo)
+   at Volo.Abp.Castle.DynamicProxy.CastleAbpMethodInvocationAdapterWithReturnValue`1.ProceedAsync()
+   at Volo.Abp.Uow.UnitOfWorkInterceptor.InterceptAsync(IAbpMethodInvocation invocation)
+   at Volo.Abp.Castle.DynamicProxy.CastleAsyncAbpInterceptorAdapter`1.InterceptAsync[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo, Func`3 proceed)
+   at MyProject.Controllers.AccountController.Login(LoginDto loginDto) in D:\VS\aspnet-core\src\MyProject.HttpApi\Controllers\AccountController.cs:line 34
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+
+2020-10-06 16:49:48.724 +08:00 [INF] Request finished in 1067.4101ms 200 application/json; charset=utf-8
+2020-10-06 16:51:22.771 +08:00 [INF] Starting MyProject.HttpApi.Host.
+2020-10-06 16:51:27.333 +08:00 [INF] User profile is available. Using 'C:\Users\Administrator\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-10-06 16:51:27.479 +08:00 [INF] Loaded ABP modules:
+2020-10-06 16:51:27.479 +08:00 [INF] - MyProject.MyProjectDomainSharedModule
+2020-10-06 16:51:27.479 +08:00 [INF] - Volo.Abp.Localization.AbpLocalizationAbstractionsModule
+2020-10-06 16:51:27.479 +08:00 [INF] - Volo.Abp.Validation.AbpValidationAbstractionsModule
+2020-10-06 16:51:27.479 +08:00 [INF] - Volo.Abp.ObjectExtending.AbpObjectExtendingModule
+2020-10-06 16:51:27.479 +08:00 [INF] - MyProject.MyProjectApplicationContractsModule
+2020-10-06 16:51:27.479 +08:00 [INF] - MyProject.MyProjectHttpApiModule
+2020-10-06 16:51:27.479 +08:00 [INF] - Volo.Abp.Castle.AbpCastleCoreModule
+2020-10-06 16:51:27.479 +08:00 [INF] - Volo.Abp.Autofac.AbpAutofacModule
+2020-10-06 16:51:27.479 +08:00 [INF] - MyProject.MyProjectDomainModule
+2020-10-06 16:51:27.479 +08:00 [INF] - Volo.Abp.ObjectMapping.AbpObjectMappingModule
+2020-10-06 16:51:27.479 +08:00 [INF] - Volo.Abp.Uow.AbpUnitOfWorkModule
+2020-10-06 16:51:27.479 +08:00 [INF] - Volo.Abp.Data.AbpDataModule
+2020-10-06 16:51:27.479 +08:00 [INF] - Volo.Abp.VirtualFileSystem.AbpVirtualFileSystemModule
+2020-10-06 16:51:27.479 +08:00 [INF] - Volo.Abp.Security.AbpSecurityModule
+2020-10-06 16:51:27.479 +08:00 [INF] - Volo.Abp.MultiTenancy.AbpMultiTenancyModule
+2020-10-06 16:51:27.479 +08:00 [INF] - Volo.Abp.Settings.AbpSettingsModule
+2020-10-06 16:51:27.479 +08:00 [INF] - Volo.Abp.Timing.AbpTimingModule
+2020-10-06 16:51:27.479 +08:00 [INF] - Volo.Abp.Json.AbpJsonModule
+2020-10-06 16:51:27.479 +08:00 [INF] - Volo.Abp.Threading.AbpThreadingModule
+2020-10-06 16:51:27.479 +08:00 [INF] - Volo.Abp.Auditing.AbpAuditingModule
+2020-10-06 16:51:27.479 +08:00 [INF] - Volo.Abp.AutoMapper.AbpAutoMapperModule
+2020-10-06 16:51:27.479 +08:00 [INF] - MyProject.MyProjectApplicationModule
+2020-10-06 16:51:27.479 +08:00 [INF] - Volo.Abp.EventBus.AbpEventBusModule
+2020-10-06 16:51:27.479 +08:00 [INF] - Volo.Abp.Guids.AbpGuidsModule
+2020-10-06 16:51:27.479 +08:00 [INF] - Volo.Abp.Domain.AbpDddDomainModule
+2020-10-06 16:51:27.479 +08:00 [INF] - Volo.Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule
+2020-10-06 16:51:27.479 +08:00 [INF] - Volo.Abp.EntityFrameworkCore.SqlServer.AbpEntityFrameworkCoreSqlServerModule
+2020-10-06 16:51:27.479 +08:00 [INF] - MyProject.EntityFrameworkCore.MyProjectEntityFrameworkCoreModule
+2020-10-06 16:51:27.479 +08:00 [INF] - MyProject.EntityFrameworkCore.MyProjectEntityFrameworkCoreDbMigrationsModule
+2020-10-06 16:51:27.479 +08:00 [INF] - Volo.Abp.Http.AbpHttpAbstractionsModule
+2020-10-06 16:51:27.479 +08:00 [INF] - Volo.Abp.Minify.AbpMinifyModule
+2020-10-06 16:51:27.479 +08:00 [INF] - Volo.Abp.Http.AbpHttpModule
+2020-10-06 16:51:27.479 +08:00 [INF] - Volo.Abp.Authorization.AbpAuthorizationModule
+2020-10-06 16:51:27.479 +08:00 [INF] - Volo.Abp.Localization.AbpLocalizationModule
+2020-10-06 16:51:27.479 +08:00 [INF] - Volo.Abp.UI.AbpUiModule
+2020-10-06 16:51:27.479 +08:00 [INF] - Volo.Abp.Validation.AbpValidationModule
+2020-10-06 16:51:27.479 +08:00 [INF] - Volo.Abp.AspNetCore.AbpAspNetCoreModule
+2020-10-06 16:51:27.479 +08:00 [INF] - Volo.Abp.ApiVersioning.AbpApiVersioningAbstractionsModule
+2020-10-06 16:51:27.479 +08:00 [INF] - Volo.Abp.Application.AbpDddApplicationContractsModule
+2020-10-06 16:51:27.479 +08:00 [INF] - Volo.Abp.Features.AbpFeaturesModule
+2020-10-06 16:51:27.479 +08:00 [INF] - Volo.Abp.Application.AbpDddApplicationModule
+2020-10-06 16:51:27.479 +08:00 [INF] - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcContractsModule
+2020-10-06 16:51:27.479 +08:00 [INF] - Volo.Abp.GlobalFeatures.AbpGlobalFeaturesModule
+2020-10-06 16:51:27.479 +08:00 [INF] - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcModule
+2020-10-06 16:51:27.479 +08:00 [INF] - MyProject.MyProjectHttpApiHostModule
+2020-10-06 16:51:28.309 +08:00 [INF] Initialized all ABP modules.
+2020-10-06 16:51:28.513 +08:00 [INF] Now listening on: https://localhost:44394
+2020-10-06 16:51:28.516 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-10-06 16:51:28.516 +08:00 [INF] Hosting environment: Development
+2020-10-06 16:51:28.516 +08:00 [INF] Content root path: D:\VS\aspnet-core\src\MyProject.HttpApi.Host
+2020-10-06 16:51:29.735 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:44394/  
+2020-10-06 16:51:30.210 +08:00 [INF] Executing endpoint 'MyProject.Controllers.HomeController.Index (MyProject.HttpApi.Host)'
+2020-10-06 16:51:30.348 +08:00 [INF] Route matched with {action = "Index", controller = "Home", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult Index() on controller MyProject.Controllers.HomeController (MyProject.HttpApi.Host).
+2020-10-06 16:51:30.407 +08:00 [INF] Executing RedirectResult, redirecting to /swagger.
+2020-10-06 16:51:30.419 +08:00 [INF] Executed action MyProject.Controllers.HomeController.Index (MyProject.HttpApi.Host) in 58.4478ms
+2020-10-06 16:51:30.419 +08:00 [INF] Executed endpoint 'MyProject.Controllers.HomeController.Index (MyProject.HttpApi.Host)'
+2020-10-06 16:51:30.446 +08:00 [INF] Request finished in 726.7919ms 302 
+2020-10-06 16:51:30.493 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:44394/swagger/index.html  
+2020-10-06 16:51:30.540 +08:00 [INF] Request finished in 47.8023ms 200 text/html;charset=utf-8
+2020-10-06 16:51:30.810 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:44394/swagger/v1/swagger.json  
+2020-10-06 16:51:31.111 +08:00 [INF] Request finished in 300.8317ms 200 application/json;charset=utf-8
+2020-10-06 16:51:37.529 +08:00 [INF] Request starting HTTP/1.1 POST https://localhost:44394/api/Account/login application/json-patch+json 41
+2020-10-06 16:51:37.539 +08:00 [INF] CORS policy execution failed.
+2020-10-06 16:51:37.539 +08:00 [INF] Request origin https://localhost:44394 does not have permission to access the resource.
+2020-10-06 16:51:37.542 +08:00 [INF] Executing endpoint 'MyProject.Controllers.AccountController.Login (MyProject.HttpApi)'
+2020-10-06 16:51:37.585 +08:00 [INF] Route matched with {action = "Login", controller = "Account", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[MyProject.HttpResult.Result`1[MyProject.JwtSetttings.Token]] Login(MyProject.Users.Dtos.LoginDto) on controller MyProject.Controllers.AccountController (MyProject.HttpApi).
+2020-10-06 16:51:38.691 +08:00 [ERR] 啊啊啊/api/Account/login|测试异常
+2020-10-06 16:51:38.701 +08:00 [INF] Executing ObjectResult, writing value of type 'MyProject.HttpResult.Result`1[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2020-10-06 16:51:38.725 +08:00 [INF] Executed action MyProject.Controllers.AccountController.Login (MyProject.HttpApi) in 1139.8758ms
+2020-10-06 16:51:38.725 +08:00 [INF] Executed endpoint 'MyProject.Controllers.AccountController.Login (MyProject.HttpApi)'
+2020-10-06 16:51:38.741 +08:00 [INF] AUDIT LOG: [200: POST   ] /api/Account/login
+- UserName - UserId                 :  - 
+- ClientIpAddress        : ::1
+- ExecutionDuration      : 1185
+- Actions:
+  - MyProject.Users.UserAppService.Login (325 ms.)
+    {"loginDto":{"userName":"string","passWord":"string"}}
+  - MyProject.Controllers.AccountController.Login (537 ms.)
+    {"loginDto":{"userName":"string","passWord":"string"}}
+- Exceptions:
+  - 测试异常
+    System.Exception: 测试异常
+   at MyProject.Users.UserAppService.Login(LoginDto loginDto) in D:\VS\aspnet-core\src\MyProject.Application\Users\UserAppService.cs:line 32
+   at Castle.DynamicProxy.AsyncInterceptorBase.ProceedAsynchronous[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo)
+   at Volo.Abp.Castle.DynamicProxy.CastleAbpMethodInvocationAdapterWithReturnValue`1.ProceedAsync()
+   at Volo.Abp.Validation.ValidationInterceptor.InterceptAsync(IAbpMethodInvocation invocation)
+   at Volo.Abp.Castle.DynamicProxy.CastleAsyncAbpInterceptorAdapter`1.InterceptAsync[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo, Func`3 proceed)
+   at Castle.DynamicProxy.AsyncInterceptorBase.ProceedAsynchronous[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo)
+   at Volo.Abp.Castle.DynamicProxy.CastleAbpMethodInvocationAdapterWithReturnValue`1.ProceedAsync()
+   at Volo.Abp.Authorization.AuthorizationInterceptor.InterceptAsync(IAbpMethodInvocation invocation)
+   at Volo.Abp.Castle.DynamicProxy.CastleAsyncAbpInterceptorAdapter`1.InterceptAsync[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo, Func`3 proceed)
+   at Castle.DynamicProxy.AsyncInterceptorBase.ProceedAsynchronous[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo)
+   at Volo.Abp.Castle.DynamicProxy.CastleAbpMethodInvocationAdapterWithReturnValue`1.ProceedAsync()
+   at Volo.Abp.Auditing.AuditingInterceptor.InterceptAsync(IAbpMethodInvocation invocation)
+   at Volo.Abp.Castle.DynamicProxy.CastleAsyncAbpInterceptorAdapter`1.InterceptAsync[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo, Func`3 proceed)
+   at Castle.DynamicProxy.AsyncInterceptorBase.ProceedAsynchronous[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo)
+   at Volo.Abp.Castle.DynamicProxy.CastleAbpMethodInvocationAdapterWithReturnValue`1.ProceedAsync()
+   at Volo.Abp.Uow.UnitOfWorkInterceptor.InterceptAsync(IAbpMethodInvocation invocation)
+   at Volo.Abp.Castle.DynamicProxy.CastleAsyncAbpInterceptorAdapter`1.InterceptAsync[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo, Func`3 proceed)
+   at MyProject.Controllers.AccountController.Login(LoginDto loginDto) in D:\VS\aspnet-core\src\MyProject.HttpApi\Controllers\AccountController.cs:line 34
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+  - 测试异常
+    System.Exception: 测试异常
+   at MyProject.Users.UserAppService.Login(LoginDto loginDto) in D:\VS\aspnet-core\src\MyProject.Application\Users\UserAppService.cs:line 32
+   at Castle.DynamicProxy.AsyncInterceptorBase.ProceedAsynchronous[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo)
+   at Volo.Abp.Castle.DynamicProxy.CastleAbpMethodInvocationAdapterWithReturnValue`1.ProceedAsync()
+   at Volo.Abp.Validation.ValidationInterceptor.InterceptAsync(IAbpMethodInvocation invocation)
+   at Volo.Abp.Castle.DynamicProxy.CastleAsyncAbpInterceptorAdapter`1.InterceptAsync[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo, Func`3 proceed)
+   at Castle.DynamicProxy.AsyncInterceptorBase.ProceedAsynchronous[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo)
+   at Volo.Abp.Castle.DynamicProxy.CastleAbpMethodInvocationAdapterWithReturnValue`1.ProceedAsync()
+   at Volo.Abp.Authorization.AuthorizationInterceptor.InterceptAsync(IAbpMethodInvocation invocation)
+   at Volo.Abp.Castle.DynamicProxy.CastleAsyncAbpInterceptorAdapter`1.InterceptAsync[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo, Func`3 proceed)
+   at Castle.DynamicProxy.AsyncInterceptorBase.ProceedAsynchronous[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo)
+   at Volo.Abp.Castle.DynamicProxy.CastleAbpMethodInvocationAdapterWithReturnValue`1.ProceedAsync()
+   at Volo.Abp.Auditing.AuditingInterceptor.InterceptAsync(IAbpMethodInvocation invocation)
+   at Volo.Abp.Castle.DynamicProxy.CastleAsyncAbpInterceptorAdapter`1.InterceptAsync[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo, Func`3 proceed)
+   at Castle.DynamicProxy.AsyncInterceptorBase.ProceedAsynchronous[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo)
+   at Volo.Abp.Castle.DynamicProxy.CastleAbpMethodInvocationAdapterWithReturnValue`1.ProceedAsync()
+   at Volo.Abp.Uow.UnitOfWorkInterceptor.InterceptAsync(IAbpMethodInvocation invocation)
+   at Volo.Abp.Castle.DynamicProxy.CastleAsyncAbpInterceptorAdapter`1.InterceptAsync[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo, Func`3 proceed)
+   at MyProject.Controllers.AccountController.Login(LoginDto loginDto) in D:\VS\aspnet-core\src\MyProject.HttpApi\Controllers\AccountController.cs:line 34
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+
+2020-10-06 16:51:38.741 +08:00 [INF] Request finished in 1212.0206ms 200 application/json; charset=utf-8
+2020-10-06 16:53:31.975 +08:00 [INF] Starting MyProject.HttpApi.Host.
+2020-10-06 16:53:35.816 +08:00 [INF] User profile is available. Using 'C:\Users\Administrator\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-10-06 16:53:35.965 +08:00 [INF] Loaded ABP modules:
+2020-10-06 16:53:35.965 +08:00 [INF] - MyProject.MyProjectDomainSharedModule
+2020-10-06 16:53:35.965 +08:00 [INF] - Volo.Abp.Localization.AbpLocalizationAbstractionsModule
+2020-10-06 16:53:35.965 +08:00 [INF] - Volo.Abp.Validation.AbpValidationAbstractionsModule
+2020-10-06 16:53:35.965 +08:00 [INF] - Volo.Abp.ObjectExtending.AbpObjectExtendingModule
+2020-10-06 16:53:35.965 +08:00 [INF] - MyProject.MyProjectApplicationContractsModule
+2020-10-06 16:53:35.965 +08:00 [INF] - MyProject.MyProjectHttpApiModule
+2020-10-06 16:53:35.965 +08:00 [INF] - Volo.Abp.Castle.AbpCastleCoreModule
+2020-10-06 16:53:35.965 +08:00 [INF] - Volo.Abp.Autofac.AbpAutofacModule
+2020-10-06 16:53:35.965 +08:00 [INF] - MyProject.MyProjectDomainModule
+2020-10-06 16:53:35.965 +08:00 [INF] - Volo.Abp.ObjectMapping.AbpObjectMappingModule
+2020-10-06 16:53:35.965 +08:00 [INF] - Volo.Abp.Uow.AbpUnitOfWorkModule
+2020-10-06 16:53:35.965 +08:00 [INF] - Volo.Abp.Data.AbpDataModule
+2020-10-06 16:53:35.965 +08:00 [INF] - Volo.Abp.VirtualFileSystem.AbpVirtualFileSystemModule
+2020-10-06 16:53:35.965 +08:00 [INF] - Volo.Abp.Security.AbpSecurityModule
+2020-10-06 16:53:35.965 +08:00 [INF] - Volo.Abp.MultiTenancy.AbpMultiTenancyModule
+2020-10-06 16:53:35.965 +08:00 [INF] - Volo.Abp.Settings.AbpSettingsModule
+2020-10-06 16:53:35.965 +08:00 [INF] - Volo.Abp.Timing.AbpTimingModule
+2020-10-06 16:53:35.965 +08:00 [INF] - Volo.Abp.Json.AbpJsonModule
+2020-10-06 16:53:35.965 +08:00 [INF] - Volo.Abp.Threading.AbpThreadingModule
+2020-10-06 16:53:35.965 +08:00 [INF] - Volo.Abp.Auditing.AbpAuditingModule
+2020-10-06 16:53:35.965 +08:00 [INF] - Volo.Abp.AutoMapper.AbpAutoMapperModule
+2020-10-06 16:53:35.965 +08:00 [INF] - MyProject.MyProjectApplicationModule
+2020-10-06 16:53:35.965 +08:00 [INF] - Volo.Abp.EventBus.AbpEventBusModule
+2020-10-06 16:53:35.965 +08:00 [INF] - Volo.Abp.Guids.AbpGuidsModule
+2020-10-06 16:53:35.965 +08:00 [INF] - Volo.Abp.Domain.AbpDddDomainModule
+2020-10-06 16:53:35.965 +08:00 [INF] - Volo.Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule
+2020-10-06 16:53:35.965 +08:00 [INF] - Volo.Abp.EntityFrameworkCore.SqlServer.AbpEntityFrameworkCoreSqlServerModule
+2020-10-06 16:53:35.965 +08:00 [INF] - MyProject.EntityFrameworkCore.MyProjectEntityFrameworkCoreModule
+2020-10-06 16:53:35.965 +08:00 [INF] - MyProject.EntityFrameworkCore.MyProjectEntityFrameworkCoreDbMigrationsModule
+2020-10-06 16:53:35.965 +08:00 [INF] - Volo.Abp.Http.AbpHttpAbstractionsModule
+2020-10-06 16:53:35.965 +08:00 [INF] - Volo.Abp.Minify.AbpMinifyModule
+2020-10-06 16:53:35.965 +08:00 [INF] - Volo.Abp.Http.AbpHttpModule
+2020-10-06 16:53:35.965 +08:00 [INF] - Volo.Abp.Authorization.AbpAuthorizationModule
+2020-10-06 16:53:35.965 +08:00 [INF] - Volo.Abp.Localization.AbpLocalizationModule
+2020-10-06 16:53:35.965 +08:00 [INF] - Volo.Abp.UI.AbpUiModule
+2020-10-06 16:53:35.965 +08:00 [INF] - Volo.Abp.Validation.AbpValidationModule
+2020-10-06 16:53:35.965 +08:00 [INF] - Volo.Abp.AspNetCore.AbpAspNetCoreModule
+2020-10-06 16:53:35.965 +08:00 [INF] - Volo.Abp.ApiVersioning.AbpApiVersioningAbstractionsModule
+2020-10-06 16:53:35.965 +08:00 [INF] - Volo.Abp.Application.AbpDddApplicationContractsModule
+2020-10-06 16:53:35.965 +08:00 [INF] - Volo.Abp.Features.AbpFeaturesModule
+2020-10-06 16:53:35.965 +08:00 [INF] - Volo.Abp.Application.AbpDddApplicationModule
+2020-10-06 16:53:35.965 +08:00 [INF] - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcContractsModule
+2020-10-06 16:53:35.965 +08:00 [INF] - Volo.Abp.GlobalFeatures.AbpGlobalFeaturesModule
+2020-10-06 16:53:35.965 +08:00 [INF] - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcModule
+2020-10-06 16:53:35.965 +08:00 [INF] - MyProject.MyProjectHttpApiHostModule
+2020-10-06 16:53:37.022 +08:00 [INF] Initialized all ABP modules.
+2020-10-06 16:53:37.238 +08:00 [INF] Now listening on: https://localhost:44394
+2020-10-06 16:53:37.239 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-10-06 16:53:37.239 +08:00 [INF] Hosting environment: Development
+2020-10-06 16:53:37.239 +08:00 [INF] Content root path: D:\VS\aspnet-core\src\MyProject.HttpApi.Host
+2020-10-06 16:53:38.436 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:44394/  
+2020-10-06 16:53:38.938 +08:00 [INF] Executing endpoint 'MyProject.Controllers.HomeController.Index (MyProject.HttpApi.Host)'
+2020-10-06 16:53:39.087 +08:00 [INF] Route matched with {action = "Index", controller = "Home", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult Index() on controller MyProject.Controllers.HomeController (MyProject.HttpApi.Host).

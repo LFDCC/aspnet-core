@@ -30,6 +30,8 @@ using System.Threading.Tasks;
 using MyProject.HttpResult;
 using Nito.AsyncEx;
 using MyProject.Filters;
+using Microsoft.AspNetCore.Mvc;
+using Volo.Abp.AspNetCore.Mvc.ExceptionHandling;
 
 namespace MyProject
 {
@@ -48,10 +50,8 @@ namespace MyProject
         {
             var configuration = context.Services.GetConfiguration();
             var hostingEnvironment = context.Services.GetHostingEnvironment();
-            context.Services.AddMvc(options =>
-            {
-                options.Filters.Add<ActionFilter>();
-            });
+
+            ConfigureFilters();
             ConfigureConventionalControllers();
             ConfigureAuthentication(context, configuration);
             ConfigureAuthorization(context, configuration);
@@ -59,6 +59,22 @@ namespace MyProject
             ConfigureVirtualFileSystem(context);
             ConfigureCors(context, configuration);
             ConfigureSwaggerServices(context);
+        }
+        /// <summary>
+        /// 配置Filter
+        /// </summary>
+        private void ConfigureFilters()
+        {
+            Configure<MvcOptions>(options =>
+            {
+                var index = options.Filters.ToList().FindIndex(filter => filter is ServiceFilterAttribute attr && attr.ServiceType.Equals(typeof(AbpExceptionFilter)));
+                if (index > -1)
+                {
+                    options.Filters.RemoveAt(index);
+                }
+                options.Filters.Add(typeof(ExceptionFilter));
+                options.Filters.Add<ActionFilter>();
+            });
         }
         /// <summary>
         /// 虚拟文件系统

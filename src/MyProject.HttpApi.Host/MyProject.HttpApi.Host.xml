@@ -4,6 +4,18 @@
         <name>MyProject.HttpApi.Host</name>
     </assembly>
     <members>
+        <member name="M:MyProject.Filters.ExceptionFilter.OnException(Microsoft.AspNetCore.Mvc.Filters.ExceptionContext)">
+            <summary>
+            异常处理
+            </summary>
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MyProject.MyProjectHttpApiHostModule.ConfigureFilters">
+            <summary>
+            配置Filter
+            </summary>
+        </member>
         <member name="M:MyProject.MyProjectHttpApiHostModule.ConfigureVirtualFileSystem(Volo.Abp.Modularity.ServiceConfigurationContext)">
             <summary>
             虚拟文件系统
