@@ -13,7 +13,7 @@ namespace MyProject.JwtSetttings
         public string Secret { get; set; }     //Configuration.GetSection("JwtSetting").Get<JwtSetting>() {get;set;}必须要
 
         public string Issuer { get; set; }
-
+                  
         public string AccessAudience { get; set; }
 
         public int AccessExpiration { get; set; }
@@ -21,6 +21,8 @@ namespace MyProject.JwtSetttings
         public string RefreshAudience { get; set; }
 
         public int RefreshExpiration { get; set; }
+
+        public int ClockSkew { get; set; }
     }
 
     public class Token

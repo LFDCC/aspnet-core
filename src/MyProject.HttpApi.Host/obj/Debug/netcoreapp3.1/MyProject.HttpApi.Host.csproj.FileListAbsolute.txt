@@ -1,3 +1,4 @@
+D:\VS\aspnet-core\src\MyProject.HttpApi.Host\bin\Debug\netcoreapp3.1\web.config
 D:\VS\aspnet-core\src\MyProject.HttpApi.Host\bin\Debug\netcoreapp3.1\appsettings.Development.json
 D:\VS\aspnet-core\src\MyProject.HttpApi.Host\bin\Debug\netcoreapp3.1\appsettings.json
 D:\VS\aspnet-core\src\MyProject.HttpApi.Host\bin\Debug\netcoreapp3.1\package.json
@@ -8,6 +9,7 @@ D:\VS\aspnet-core\src\MyProject.HttpApi.Host\bin\Debug\netcoreapp3.1\MyProject.H
 D:\VS\aspnet-core\src\MyProject.HttpApi.Host\bin\Debug\netcoreapp3.1\MyProject.HttpApi.Host.runtimeconfig.dev.json
 D:\VS\aspnet-core\src\MyProject.HttpApi.Host\bin\Debug\netcoreapp3.1\MyProject.HttpApi.Host.dll
 D:\VS\aspnet-core\src\MyProject.HttpApi.Host\bin\Debug\netcoreapp3.1\MyProject.HttpApi.Host.pdb
+D:\VS\aspnet-core\src\MyProject.HttpApi.Host\bin\Debug\netcoreapp3.1\MyProject.HttpApi.Host.xml
 D:\VS\aspnet-core\src\MyProject.HttpApi.Host\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Antiforgery.dll
 D:\VS\aspnet-core\src\MyProject.HttpApi.Host\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Authentication.Abstractions.dll
 D:\VS\aspnet-core\src\MyProject.HttpApi.Host\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Authentication.Cookies.dll
@@ -228,6 +230,7 @@ D:\VS\aspnet-core\src\MyProject.HttpApi.Host\bin\Debug\netcoreapp3.1\refs\System
 D:\VS\aspnet-core\src\MyProject.HttpApi.Host\bin\Debug\netcoreapp3.1\refs\System.Text.Encoding.CodePages.dll
 D:\VS\aspnet-core\src\MyProject.HttpApi.Host\bin\Debug\netcoreapp3.1\refs\System.Text.Encoding.dll
 D:\VS\aspnet-core\src\MyProject.HttpApi.Host\bin\Debug\netcoreapp3.1\refs\System.Text.Encoding.Extensions.dll
+D:\VS\aspnet-core\src\MyProject.HttpApi.Host\bin\Debug\netcoreapp3.1\refs\System.Text.Encodings.Web.dll
 D:\VS\aspnet-core\src\MyProject.HttpApi.Host\bin\Debug\netcoreapp3.1\refs\System.Text.RegularExpressions.dll
 D:\VS\aspnet-core\src\MyProject.HttpApi.Host\bin\Debug\netcoreapp3.1\refs\System.Threading.Channels.dll
 D:\VS\aspnet-core\src\MyProject.HttpApi.Host\bin\Debug\netcoreapp3.1\refs\System.Threading.dll
@@ -480,6 +483,7 @@ D:\VS\aspnet-core\src\MyProject.HttpApi.Host\bin\Debug\netcoreapp3.1\MyProject.H
 D:\VS\aspnet-core\src\MyProject.HttpApi.Host\bin\Debug\netcoreapp3.1\MyProject.Application.pdb
 D:\VS\aspnet-core\src\MyProject.HttpApi.Host\bin\Debug\netcoreapp3.1\MyProject.EntityFrameworkCore.DbMigrations.pdb
 D:\VS\aspnet-core\src\MyProject.HttpApi.Host\bin\Debug\netcoreapp3.1\MyProject.HttpApi.pdb
+D:\VS\aspnet-core\src\MyProject.HttpApi.Host\bin\Debug\netcoreapp3.1\MyProject.HttpApi.xml
 D:\VS\aspnet-core\src\MyProject.HttpApi.Host\bin\Debug\netcoreapp3.1\MyProject.Application.Contracts.pdb
 D:\VS\aspnet-core\src\MyProject.HttpApi.Host\bin\Debug\netcoreapp3.1\MyProject.Domain.pdb
 D:\VS\aspnet-core\src\MyProject.HttpApi.Host\bin\Debug\netcoreapp3.1\MyProject.Domain.Shared.pdb
@@ -488,6 +492,7 @@ D:\VS\aspnet-core\src\MyProject.HttpApi.Host\obj\Debug\netcoreapp3.1\MyProject.H
 D:\VS\aspnet-core\src\MyProject.HttpApi.Host\obj\Debug\netcoreapp3.1\MyProject.HttpApi.Host.AssemblyInfoInputs.cache
 D:\VS\aspnet-core\src\MyProject.HttpApi.Host\obj\Debug\netcoreapp3.1\MyProject.HttpApi.Host.AssemblyInfo.cs
 D:\VS\aspnet-core\src\MyProject.HttpApi.Host\obj\Debug\netcoreapp3.1\MyProject.HttpApi.Host.csproj.CoreCompileInputs.cache
+D:\VS\aspnet-core\src\MyProject.HttpApi.Host\obj\Debug\netcoreapp3.1\MyProject.HttpApi.Host.MvcApplicationPartsAssemblyInfo.cs
 D:\VS\aspnet-core\src\MyProject.HttpApi.Host\obj\Debug\netcoreapp3.1\MyProject.HttpApi.Host.MvcApplicationPartsAssemblyInfo.cache
 D:\VS\aspnet-core\src\MyProject.HttpApi.Host\obj\Debug\netcoreapp3.1\MyProject.HttpApi.Host.RazorTargetAssemblyInfo.cache
 D:\VS\aspnet-core\src\MyProject.HttpApi.Host\obj\Debug\netcoreapp3.1\MyProject.HttpApi.Host.csproj.CopyComplete
@@ -496,5 +501,6 @@ D:\VS\aspnet-core\src\MyProject.HttpApi.Host\obj\Debug\netcoreapp3.1\staticwebas
 D:\VS\aspnet-core\src\MyProject.HttpApi.Host\obj\Debug\netcoreapp3.1\MyProject.HttpApi.Host.dll
 D:\VS\aspnet-core\src\MyProject.HttpApi.Host\obj\Debug\netcoreapp3.1\MyProject.HttpApi.Host.pdb
 D:\VS\aspnet-core\src\MyProject.HttpApi.Host\obj\Debug\netcoreapp3.1\MyProject.HttpApi.Host.genruntimeconfig.cache
-D:\VS\aspnet-core\src\MyProject.HttpApi.Host\bin\Debug\netcoreapp3.1\refs\System.Text.Encodings.Web.dll
-D:\VS\aspnet-core\src\MyProject.HttpApi.Host\obj\Debug\netcoreapp3.1\MyProject.HttpApi.Host.MvcApplicationPartsAssemblyInfo.cs
+D:\VS\aspnet-core\src\MyProject.HttpApi.Host\bin\Debug\netcoreapp3.1\MyProject.Domain.xml
+D:\VS\aspnet-core\src\MyProject.HttpApi.Host\bin\Debug\netcoreapp3.1\MyProject.Domain.Shared.xml
+D:\VS\aspnet-core\src\MyProject.HttpApi.Host\bin\Debug\netcoreapp3.1\MyProject.Application.Contracts.xml

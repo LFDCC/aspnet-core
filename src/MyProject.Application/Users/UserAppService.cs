@@ -1,43 +1,57 @@
-using System;
 using System.Threading.Tasks;
+
 using Microsoft.AspNetCore.Authorization;
-using MyProject.Permissions;
+using Microsoft.AspNetCore.Mvc;
+
+using MyProject.HttpResult;
 using MyProject.Users.Dtos;
+
 using Volo.Abp;
-using Volo.Abp.Application.Dtos;
-using Volo.Abp.Application.Services;
+using Volo.Abp.Security.Claims;
 using Volo.Abp.Security.Encryption;
+using Volo.Abp.Users;
 
 namespace MyProject.Users
 {
     [Authorize]
-    public class UserAppService : CrudAppService<User, UserDto, Guid, PagedAndSortedResultRequestDto, CreateUserDto, UpdateUserDto>,
-        IUserAppService
+    [Route("api/[controller]")]
+    public class UserAppService : MyProjectAppService, IUserAppService
     {
-        //protected override string GetPolicyName { get; set; } = MyProjectPermissions.User.Default;
-        //protected override string GetListPolicyName { get; set; } = MyProjectPermissions.User.Default;
-        //protected override string CreatePolicyName { get; set; } = MyProjectPermissions.User.Create;
-        //protected override string UpdatePolicyName { get; set; } = MyProjectPermissions.User.Update;
-        //protected override string DeletePolicyName { get; set; } = MyProjectPermissions.User.Delete;
-
         private readonly IUserRepository _repository;
         private readonly IStringEncryptionService _stringEncryptionService;
-
-
-        public UserAppService(IUserRepository repository, IStringEncryptionService stringEncryptionService) : base(repository)
+        public UserAppService(IUserRepository repository, IStringEncryptionService stringEncryptionService)
         {
             _repository = repository;
             _stringEncryptionService = stringEncryptionService;
         }
-                 
+
         [AllowAnonymous]
         [RemoteService(false)]
         public async Task<UserDto> Login(LoginDto loginDto)
         {
             var password = _stringEncryptionService.Encrypt(loginDto.PassWord);
-            var user = await _repository.GetAsync(t => t.UserName == loginDto.UserName && t.PassWord == password);
-                  
+            var user = await _repository.FindAsync(t => t.UserName == loginDto.UserName && t.PassWord == password);
+
             return ObjectMapper.Map<User, UserDto>(user);
+        }
+        [HttpGet]
+        [Route("info")]
+        public async Task<Result<UserInfoDto>> GetInfo()
+        {
+            var user = await _repository.FindAsync(t => t.Id == CurrentUser.Id);
+            var userinfo = new UserInfoDto
+            {
+                Name = user.RealName,
+                Roles = CurrentUser.Roles,
+                Avatar = "",
+                Introduction = ""
+            };
+            var result = new Result<UserInfoDto>
+            {
+                Code = ResultCode.Success,
+                Data = userinfo
+            };
+            return result;
         }
 
     }

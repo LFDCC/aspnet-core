@@ -21,7 +21,9 @@ namespace MyProject.JwtSetttings
         /// <summary>
         /// 创建access_toekn refresh_token
         /// </summary>
-        /// <param name="request"></param>
+        /// <param name="userId"></param>
+        /// <param name="userName"></param>
+        /// <param name="userRole"></param>
         /// <returns></returns>
         public Token GetToken(Guid userId, string userName, string userRole)
         {
@@ -60,7 +62,9 @@ namespace MyProject.JwtSetttings
         /// <summary>
         /// 创建access_token
         /// </summary>
-        /// <param name="request"></param>
+        /// <param name="userId"></param>
+        /// <param name="userName"></param>
+        /// <param name="userRole"></param>
         /// <returns></returns>
         private AccessToken GetAccessToken(Guid userId, string userName, string userRole)
         {
@@ -85,7 +89,7 @@ namespace MyProject.JwtSetttings
         /// 创建refresh_token
         /// refresh_token 仅用来刷新 access_token claims尽量少放内容，给个用户标识即可
         /// </summary>
-        /// <param name="request"></param>
+        /// <param name="userName"></param>
         /// <returns></returns>
         private RefreshToken GetRefreshToken(string userName)
         {

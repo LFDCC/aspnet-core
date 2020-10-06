@@ -1,0 +1,535 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>MyProject.Domain.Shared</name>
+    </assembly>
+    <members>
+        <member name="M:MyProject.Extensions.ConvertExtensions.TryToInt(System.Object,System.Int32)">
+            <summary>
+            string转int
+            </summary>
+            <param name="input">输入</param>
+            <param name="defaultNum">转换失败默认</param>
+            <returns></returns>
+        </member>
+        <member name="M:MyProject.Extensions.ConvertExtensions.TryToLong(System.Object,System.Int64)">
+            <summary>
+            string转long
+            </summary>
+            <param name="input">输入</param>
+            <param name="defaultNum">转换失败默认</param>
+            <returns></returns>
+        </member>
+        <member name="M:MyProject.Extensions.ConvertExtensions.TryToDouble(System.Object,System.Double)">
+            <summary>
+            string转double
+            </summary>
+            <param name="input">输入</param>
+            <param name="defaultNum">转换失败默认值</param>
+            <returns></returns>
+        </member>
+        <member name="M:MyProject.Extensions.ConvertExtensions.TryToDecimal(System.Object,System.Decimal)">
+            <summary>
+            string转decimal
+            </summary>
+            <param name="input">输入</param>
+            <param name="defaultNum">转换失败默认值</param>
+            <returns></returns>
+        </member>
+        <member name="M:MyProject.Extensions.ConvertExtensions.TryToFloat(System.Object,System.Single)">
+            <summary>
+            string转decimal
+            </summary>
+            <param name="input">输入</param>
+            <param name="defaultNum">转换失败默认值</param>
+            <returns></returns>
+        </member>
+        <member name="M:MyProject.Extensions.ConvertExtensions.TryToBool(System.Object,System.Boolean,System.String,System.String)">
+            <summary>
+            string转bool
+            </summary>
+            <param name="input">输入</param>
+            <param name="falseVal"></param>
+            <param name="defaultBool">转换失败默认值</param>
+            <param name="trueVal"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MyProject.Extensions.ConvertExtensions.TryToString(System.ValueType,System.String)">
+            <summary>
+            值类型转string
+            </summary>
+            <param name="inputObj">输入</param>
+            <param name="defaultStr">转换失败默认值</param>
+            <returns></returns>
+        </member>
+        <member name="M:MyProject.Extensions.ConvertExtensions.TryToDateTime(System.String,System.DateTime)">
+            <summary>
+            字符串转时间
+            </summary>
+            <param name="inputStr">输入</param>
+            <param name="defaultValue">默认值</param>
+            <returns></returns>
+        </member>
+        <member name="M:MyProject.Extensions.ConvertExtensions.TryToDateTime(System.String,System.String,System.DateTime)">
+            <summary>
+            字符串转时间
+            </summary>
+            <param name="inputStr">输入</param>
+            <param name="formater"></param>
+            <param name="defaultValue">默认值</param>
+            <returns></returns>
+        </member>
+        <member name="M:MyProject.Extensions.ConvertExtensions.TryToDateTime(System.String)">
+            <summary>
+            时间戳转时间
+            </summary>
+            <param name="timestamp"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MyProject.Extensions.ConvertExtensions.TryToDateTime(System.DateTime,System.String,System.String)">
+            <summary>
+            时间格式转换为字符串
+            </summary>
+            <param name="date"></param>
+            <param name="format"></param>
+            <param name="cultureInfo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MyProject.Extensions.ConvertExtensions.TryToTrim(System.String)">
+            <summary>
+            字符串去空格
+            </summary>
+            <param name="inputStr">输入</param>
+            <returns></returns>
+        </member>
+        <member name="M:MyProject.Extensions.ConvertExtensions.TryToEnum``1(System.String,``0)">
+            <summary>
+            字符串转枚举
+            </summary>
+            <typeparam name="T">输入</typeparam>
+            <param name="str"></param>
+            <param name="t"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MyProject.Extensions.DownloadExtensions.DownloadAsync(System.Byte[],System.String)">
+            <summary>
+            将数组类型文件保存至指定路径
+            </summary>
+            <param name="buffer"></param>
+            <param name="path"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MyProject.Extensions.EncryptExtensions.EncodeBase64String(System.String,System.String)">
+            <summary>
+            将字符串使用base64算法编码 
+            </summary>
+            <param name="encodingName">编码类型（编码名称）</param>
+            <param name="inputStr">待加密的字符串</param>
+            <returns>加密后的字符串</returns> 
+        </member>
+        <member name="M:MyProject.Extensions.EncryptExtensions.DecodeBase64String(System.String,System.String)">
+            <summary> 
+            将字符串使用base64算法解码
+            </summary> 
+            <param name="encodingName">编码类型</param> 
+            <param name="base64String">已用base64算法加密的字符串</param> 
+            <returns>解密后的字符串</returns> 
+        </member>
+        <member name="M:MyProject.Extensions.EncryptExtensions.EncodeMd5String(System.String)">
+            <summary>
+            将字符串使用MD5算法加密
+            </summary>
+            <param name="inputStr"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MyProject.Extensions.EncryptExtensions.EncodeSha1String(System.String)">
+            <summary>
+            将字符串使用SHA1算法加密
+            </summary>
+            <param name="inputStr">明文</param>
+            <returns></returns>
+        </member>
+        <member name="M:MyProject.Extensions.EncryptExtensions.EncodeSha256String(System.String)">
+            <summary>
+            将字符串使用SHA256算法加密
+            </summary>
+            <param name="inputStr">明文</param>
+            <returns></returns>
+        </member>
+        <member name="M:MyProject.Extensions.EncryptExtensions.EncodeSha384String(System.String)">
+            <summary>
+            将字符串使用SHA384算法加密
+            </summary>
+            <param name="inputStr">明文</param>
+            <returns></returns>
+        </member>
+        <member name="M:MyProject.Extensions.EncryptExtensions.EncodeSha512String(System.String)">
+            <summary>
+            将字符串使用SHA512算法加密
+            </summary>
+            <param name="inputStr">明文</param>
+            <returns></returns>
+        </member>
+        <member name="M:MyProject.Extensions.EnumerableExtensions.DistinctBy``2(System.Collections.Generic.IEnumerable{``0},System.Func{``0,``1})">
+            <summary>
+            去重
+            </summary>
+        </member>
+        <member name="M:MyProject.Extensions.EnumerableExtensions.HasRepeat``2(System.Collections.Generic.IEnumerable{``0},System.Func{``0,``1})">
+            <summary>
+            是否有重复
+            </summary>
+            <typeparam name="TSource"></typeparam>
+            <typeparam name="TKey"></typeparam>
+            <param name="source"></param>
+            <param name="keySelector"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MyProject.Extensions.EnumerableExtensions.HasRepeat``1(System.Collections.Generic.IEnumerable{``0})">
+            <summary>
+            是否有重复
+            </summary>
+            <typeparam name="TSource"></typeparam>
+            <param name="source"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MyProject.Extensions.EnumerableExtensions.PageByIndex``1(System.Linq.IQueryable{``0},System.Int32,System.Int32)">
+            <summary>
+            分页查询
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="query"></param>
+            <param name="pageIndex"></param>
+            <param name="pageSize"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MyProject.Extensions.EnumerableExtensions.Randomize``1(System.Collections.Generic.IEnumerable{``0},System.Int32)">
+            <summary>
+            随机化 IEnumerable
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="source"></param>
+            <param name="count"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MyProject.Extensions.HttpContextExtensions.GetClientIp(Microsoft.AspNetCore.Http.HttpRequest)">
+            <summary>
+            获取客户端Ip
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MyProject.Extensions.ObjectExtensions.IsNull(System.Object)">
+            <summary>
+            判断对象是否为空
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MyProject.Extensions.ObjectExtensions.IsNotNull(System.Object)">
+            <summary>
+            判断对象是否不为空
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MyProject.Extensions.ObjectExtensions.ThrowIfNull(System.Object)">
+            <summary>
+            </summary>
+            <param name="obj"></param>
+        </member>
+        <member name="M:MyProject.Extensions.SerializeExtensions.ToJson(System.Object,System.Boolean)">
+            <summary>
+            实体对象转JSON字符串
+            </summary>
+            <param name="obj"></param>
+            <param name="ignoreNull"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MyProject.Extensions.SerializeExtensions.FromJson``1(System.String)">
+            <summary>
+            JSON字符串转实体对象
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="jsonStr"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MyProject.Extensions.SerializeExtensions.SerializeUtf8(System.String)">
+            <summary>
+            字符串序列化成字节序列
+            </summary>
+            <param name="str"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MyProject.Extensions.SerializeExtensions.DeserializeUtf8(System.Byte[])">
+            <summary>
+            字节序列序列化成字符串
+            </summary>
+            <param name="stream"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MyProject.Extensions.SerializeExtensions.FromJsonFile``1(System.String,System.String)">
+            <summary>
+            根据key将json文件内容转换为指定对象
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="filePath"></param>
+            <param name="key"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MyProject.Extensions.StringExtensions.IsNullOrEmpty(System.String)">
+            <summary>
+            </summary>
+            <param name="inputStr"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MyProject.Extensions.StringExtensions.IsNullOrWhiteSpace(System.String)">
+            <summary>
+            </summary>
+            <param name="inputStr"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MyProject.Extensions.StringExtensions.IsNotNullOrEmpty(System.String)">
+            <summary>
+            </summary>
+            <param name="inputStr"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MyProject.Extensions.StringExtensions.IsNotNullOrWhiteSpace(System.String)">
+            <summary>
+            </summary>
+            <param name="inputStr"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MyProject.Extensions.StringExtensions.IsChinese(System.String)">
+            <summary>
+            是否中文
+            </summary>
+            <param name="str"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MyProject.Extensions.StringExtensions.IsEmail(System.String)">
+            <summary>
+            是否为邮箱名
+            </summary>
+        </member>
+        <member name="M:MyProject.Extensions.StringExtensions.IsMobile(System.String)">
+            <summary>
+            是否为手机号
+            </summary>
+        </member>
+        <member name="M:MyProject.Extensions.StringExtensions.IsPhone(System.String)">
+            <summary>
+            是否为固话号
+            </summary>
+        </member>
+        <member name="M:MyProject.Extensions.StringExtensions.IsIp(System.String)">
+            <summary>
+            是否为IP
+            </summary>
+        </member>
+        <member name="M:MyProject.Extensions.StringExtensions.IsIdCard(System.String)">
+            <summary>
+            是否是身份证号
+            </summary>
+        </member>
+        <member name="M:MyProject.Extensions.StringExtensions.IsDate(System.String)">
+            <summary>
+            是否为日期
+            </summary>
+        </member>
+        <member name="M:MyProject.Extensions.StringExtensions.IsNumeric(System.String)">
+            <summary>
+            是否是数值(包括整数和小数)
+            </summary>
+        </member>
+        <member name="M:MyProject.Extensions.StringExtensions.IsZipCode(System.String)">
+            <summary>
+            是否为邮政编码
+            </summary>
+        </member>
+        <member name="M:MyProject.Extensions.StringExtensions.IsImgFileName(System.String)">
+            <summary>
+            是否是图片文件名
+            </summary>
+            <param name="fileName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MyProject.Extensions.StringExtensions.Sub(System.String,System.Int32)">
+            <summary>
+            </summary>
+            <param name="inputStr"></param>
+            <param name="length"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MyProject.Extensions.StringExtensions.TryReplace(System.String,System.String,System.String)">
+            <summary>
+            </summary>
+            <param name="inputStr"></param>
+            <param name="oldStr"></param>
+            <param name="newStr"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MyProject.Extensions.StringExtensions.RegexReplace(System.String,System.String,System.String)">
+            <summary>
+            </summary>
+            <param name="inputStr"></param>
+            <param name="pattern"></param>
+            <param name="replacement"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MyProject.Extensions.StringExtensions.Format(System.String,System.Object,System.Object)">
+            <summary>
+            Format
+            </summary>
+            <param name="format"></param>
+            <param name="arg0"></param>
+            <param name="arg1"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MyProject.Extensions.StringExtensions.Format(System.String,System.Object[])">
+            <summary>
+            Format
+            </summary>
+            <param name="format"></param>
+            <param name="args"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MyProject.Extensions.StringExtensions.Format(System.String,System.Object,System.Object,System.Object)">
+            <summary>
+            Format
+            </summary>
+            <param name="format"></param>
+            <param name="arg0"></param>
+            <param name="arg1"></param>
+            <param name="arg2"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MyProject.Extensions.StringExtensions.Format(System.String,System.Object)">
+            <summary>
+            Format
+            </summary>
+            <param name="format"></param>
+            <param name="arg0"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MyProject.Extensions.StringExtensions.FormatWith(System.String,System.Object[])">
+            <summary>
+            FormatWith
+            </summary>
+            <param name="this"></param>
+            <param name="values"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MyProject.Extensions.StringExtensions.FormatWith(System.String,System.Object,System.Object,System.Object)">
+            <summary>
+            FormatWith
+            </summary>
+            <param name="this"></param>
+            <param name="arg0"></param>
+            <param name="arg1"></param>
+            <param name="arg2"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MyProject.Extensions.StringExtensions.FormatWith(System.String,System.Object,System.Object)">
+            <summary>
+            FormatWith
+            </summary>
+            <param name="this"></param>
+            <param name="arg0"></param>
+            <param name="arg1"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MyProject.Extensions.StringExtensions.FormatWith(System.String,System.Object)">
+            <summary>
+            FormatWith
+            </summary>
+            <param name="this"></param>
+            <param name="arg0"></param>
+            <returns></returns>
+        </member>
+        <member name="P:MyProject.HttpResult.Result`1.Code">
+            <summary>
+            状态码
+            </summary>
+        </member>
+        <member name="P:MyProject.HttpResult.Result`1.Message">
+            <summary>
+            消息
+            </summary>
+        </member>
+        <member name="P:MyProject.HttpResult.Result`1.Data">
+            <summary>
+            结果集
+            </summary>
+        </member>
+        <member name="F:MyProject.HttpResult.ResultCode.Success">
+            <summary>
+            成功
+            </summary>
+        </member>
+        <member name="F:MyProject.HttpResult.ResultCode.Fail">
+            <summary>
+            失败
+            </summary>
+        </member>
+        <member name="F:MyProject.HttpResult.ResultCode.Error">
+            <summary>
+            异常
+            </summary>
+        </member>
+        <member name="F:MyProject.HttpResult.ResultCode.Forbidden">
+            <summary>
+            拒绝访问
+            </summary>
+        </member>
+        <member name="F:MyProject.HttpResult.ResultCode.UnAuthorized">
+            <summary>
+            非法令牌/未授权
+            </summary>
+        </member>
+        <member name="F:MyProject.HttpResult.ResultCode.TokenExpired">
+            <summary>
+            令牌超时
+            </summary>
+        </member>
+        <member name="T:MyProject.JwtSetttings.JwtSetting">
+            <summary>
+            jwt配置
+            </summary>
+        </member>
+        <member name="M:MyProject.JwtSetttings.TokenService.GetToken(System.Guid,System.String,System.String)">
+            <summary>
+            创建access_toekn refresh_token
+            </summary>
+            <param name="userId"></param>
+            <param name="userName"></param>
+            <param name="userRole"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MyProject.JwtSetttings.TokenService.ValidateRefreshToken(System.String)">
+            <summary>
+            校验RefreshToken
+            </summary>
+            <param name="refresh_token"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MyProject.JwtSetttings.TokenService.GetAccessToken(System.Guid,System.String,System.String)">
+            <summary>
+            创建access_token
+            </summary>
+            <param name="userId"></param>
+            <param name="userName"></param>
+            <param name="userRole"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MyProject.JwtSetttings.TokenService.GetRefreshToken(System.String)">
+            <summary>
+            创建refresh_token
+            refresh_token 仅用来刷新 access_token claims尽量少放内容，给个用户标识即可
+            </summary>
+            <param name="userName"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

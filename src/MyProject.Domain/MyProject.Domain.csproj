@@ -7,6 +7,10 @@
     <RootNamespace>MyProject</RootNamespace>
   </PropertyGroup>
 
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>D:\VS\aspnet-core\src\MyProject.Domain\MyProject.Domain.xml</DocumentationFile>
+  </PropertyGroup>
+
   <ItemGroup>
     <ProjectReference Include="..\MyProject.Domain.Shared\MyProject.Domain.Shared.csproj" />
   </ItemGroup>

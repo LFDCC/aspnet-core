@@ -10,3 +10,5 @@ D:\VS\aspnet-core\src\MyProject.Application.Contracts\obj\Debug\netstandard2.0\M
 D:\VS\aspnet-core\src\MyProject.Application.Contracts\obj\Debug\netstandard2.0\MyProject.Application.Contracts.csproj.CopyComplete
 D:\VS\aspnet-core\src\MyProject.Application.Contracts\obj\Debug\netstandard2.0\MyProject.Application.Contracts.dll
 D:\VS\aspnet-core\src\MyProject.Application.Contracts\obj\Debug\netstandard2.0\MyProject.Application.Contracts.pdb
+D:\VS\aspnet-core\src\MyProject.Application.Contracts\bin\Debug\netstandard2.0\MyProject.Domain.Shared.xml
+D:\VS\aspnet-core\src\MyProject.Application.Contracts\bin\Debug\netstandard2.0\MyProject.Application.Contracts.xml

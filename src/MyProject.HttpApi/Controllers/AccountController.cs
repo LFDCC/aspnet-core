@@ -3,6 +3,7 @@
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
+using MyProject.HttpResult;
 using MyProject.JwtSetttings;
 using MyProject.Users;
 using MyProject.Users.Dtos;
@@ -20,13 +21,30 @@ namespace MyProject.Controllers
             _tokenService = tokenService;
         }
 
+        /// <summary>
+        /// 登录
+        /// </summary>
+        /// <param name="loginDto"></param>
+        /// <returns></returns>
         [HttpPost]
         [Route("login")]
-        public async Task<Token> Login([FromBody] LoginDto loginDto)
+        public async Task<Result<Token>> Login([FromBody] LoginDto loginDto)
         {
+            var result = new Result<Token>();
             var user = await _userAppService.Login(loginDto);
-            var token = _tokenService.GetToken(user.Id, user.UserName, user.RoleName);
-            return token;
+            if (user != null)
+            {
+                var token = _tokenService.GetToken(user.Id, user.UserName, user.RoleName);
+                result.Code = ResultCode.Success;
+                result.Data = token;
+                return result;
+            }
+            else
+            {
+                result.Code = ResultCode.Fail;
+                result.Message = "用户名或密码错误";
+            }
+            return result;
         }
     }
 }

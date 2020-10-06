@@ -14,3 +14,6 @@ D:\VS\aspnet-core\src\MyProject.Application\obj\Debug\netcoreapp3.1\MyProject.Ap
 D:\VS\aspnet-core\src\MyProject.Application\obj\Debug\netcoreapp3.1\MyProject.Application.csproj.CopyComplete
 D:\VS\aspnet-core\src\MyProject.Application\obj\Debug\netcoreapp3.1\MyProject.Application.dll
 D:\VS\aspnet-core\src\MyProject.Application\obj\Debug\netcoreapp3.1\MyProject.Application.pdb
+D:\VS\aspnet-core\src\MyProject.Application\bin\Debug\netcoreapp3.1\MyProject.Domain.xml
+D:\VS\aspnet-core\src\MyProject.Application\bin\Debug\netcoreapp3.1\MyProject.Domain.Shared.xml
+D:\VS\aspnet-core\src\MyProject.Application\bin\Debug\netcoreapp3.1\MyProject.Application.Contracts.xml

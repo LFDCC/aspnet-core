@@ -17,3 +17,5 @@ D:\VS\aspnet-core\src\MyProject.EntityFrameworkCore.DbMigrations\obj\Debug\netco
 D:\VS\aspnet-core\src\MyProject.EntityFrameworkCore.DbMigrations\obj\Debug\netcoreapp3.1\MyProject.EntityFrameworkCore.DbMigrations.dll
 D:\VS\aspnet-core\src\MyProject.EntityFrameworkCore.DbMigrations\obj\Debug\netcoreapp3.1\MyProject.EntityFrameworkCore.DbMigrations.pdb
 D:\VS\aspnet-core\src\MyProject.EntityFrameworkCore.DbMigrations\obj\Debug\netcoreapp3.1\MyProject.EntityFrameworkCore.DbMigrations.genruntimeconfig.cache
+D:\VS\aspnet-core\src\MyProject.EntityFrameworkCore.DbMigrations\bin\Debug\netcoreapp3.1\MyProject.Domain.xml
+D:\VS\aspnet-core\src\MyProject.EntityFrameworkCore.DbMigrations\bin\Debug\netcoreapp3.1\MyProject.Domain.Shared.xml

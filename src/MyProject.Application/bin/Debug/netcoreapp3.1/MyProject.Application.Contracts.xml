@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>MyProject.Application.Contracts</name>
+    </assembly>
+    <members>
+        <member name="P:MyProject.Users.Dtos.LoginDto.UserName">
+            <summary>
+            用户名
+            </summary>
+        </member>
+        <member name="P:MyProject.Users.Dtos.LoginDto.PassWord">
+            <summary>
+            密码
+            </summary>
+        </member>
+    </members>
+</doc>

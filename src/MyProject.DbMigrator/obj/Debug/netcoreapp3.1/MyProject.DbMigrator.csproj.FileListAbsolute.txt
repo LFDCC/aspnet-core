@@ -177,3 +177,6 @@ D:\VS\aspnet-core\src\MyProject.DbMigrator\obj\Debug\netcoreapp3.1\MyProject.DbM
 D:\VS\aspnet-core\src\MyProject.DbMigrator\obj\Debug\netcoreapp3.1\MyProject.DbMigrator.dll
 D:\VS\aspnet-core\src\MyProject.DbMigrator\obj\Debug\netcoreapp3.1\MyProject.DbMigrator.pdb
 D:\VS\aspnet-core\src\MyProject.DbMigrator\obj\Debug\netcoreapp3.1\MyProject.DbMigrator.genruntimeconfig.cache
+D:\VS\aspnet-core\src\MyProject.DbMigrator\bin\Debug\netcoreapp3.1\MyProject.Domain.xml
+D:\VS\aspnet-core\src\MyProject.DbMigrator\bin\Debug\netcoreapp3.1\MyProject.Domain.Shared.xml
+D:\VS\aspnet-core\src\MyProject.DbMigrator\bin\Debug\netcoreapp3.1\MyProject.Application.Contracts.xml

@@ -26,6 +26,10 @@ using Volo.Abp.Modularity;
 using Volo.Abp.VirtualFileSystem;
 
 using Newtonsoft.Json;
+using System.Threading.Tasks;
+using MyProject.HttpResult;
+using Nito.AsyncEx;
+using MyProject.Filters;
 
 namespace MyProject
 {
@@ -44,7 +48,10 @@ namespace MyProject
         {
             var configuration = context.Services.GetConfiguration();
             var hostingEnvironment = context.Services.GetHostingEnvironment();
-
+            context.Services.AddMvc(options =>
+            {
+                options.Filters.Add<ActionFilter>();
+            });
             ConfigureConventionalControllers();
             ConfigureAuthentication(context, configuration);
             ConfigureAuthorization(context, configuration);
@@ -105,6 +112,9 @@ namespace MyProject
                 options.TokenValidationParameters = new TokenValidationParameters
                 {
                     ValidateIssuerSigningKey = true,
+                    ValidateLifetime = true,
+                    //注意这是缓冲过期时间，总的有效时间等于这个时间加上jwt的过期时间，如果不配置，默认是5分钟
+                    ClockSkew = TimeSpan.FromMinutes(setting.ClockSkew),
                     IssuerSigningKey = new SymmetricSecurityKey(Encoding.ASCII.GetBytes(setting.Secret)),
                     ValidIssuer = setting.Issuer,
                     ValidAudience = setting.AccessAudience,
@@ -114,16 +124,38 @@ namespace MyProject
                 {
                     OnChallenge = async context =>
                     {
+                        //token 验证失败
                         // 跳过默认的处理逻辑，返回下面的模型数据
                         context.HandleResponse();
-
                         context.Response.ContentType = "application/json;charset=utf-8";
                         context.Response.StatusCode = StatusCodes.Status200OK;
+                        var result = new Result<string>();
 
-                        var result = new { 
-                            message= "UnAuthorized"
+                        if (context.AuthenticateFailure?.GetType() == typeof(SecurityTokenExpiredException))
+                        {
+                            //token过期
+                            context.Response.Headers.Add("Token-Expired", "true");
+                            result.Code = ResultCode.TokenExpired;
+                            result.Message = ResultCode.TokenExpired.ToString();
+                        }
+                        else
+                        {
+                            result.Code = ResultCode.UnAuthorized;
+                            result.Message = ResultCode.UnAuthorized.ToString();
+                        }
+
+                        await context.Response.WriteAsync(result.ToJson());
+                    },
+                    OnForbidden = async context =>
+                    {
+                        context.Response.ContentType = "application/json;charset=utf-8";
+                        context.Response.StatusCode = StatusCodes.Status200OK;
+                        //权限不足，访问被拒绝
+                        var result = new Result<string>
+                        {
+                            Code = ResultCode.Forbidden,
+                            Message = ResultCode.Forbidden.ToString()
                         };
-
                         await context.Response.WriteAsync(result.ToJson());
                     }
                 };
@@ -199,9 +231,13 @@ namespace MyProject
                                 }
                             },
                             new string[] { }
-                        }    
+                        }
                     });
                     options.DocInclusionPredicate((docName, description) => true);
+                    options.IncludeXmlComments(Path.Combine(AppContext.BaseDirectory, "MyProject.Domain.Shared.xml"));
+                    options.IncludeXmlComments(Path.Combine(AppContext.BaseDirectory, "MyProject.Domain.xml"));
+                    options.IncludeXmlComments(Path.Combine(AppContext.BaseDirectory, "MyProject.Application.Contracts.xml"));
+                    options.IncludeXmlComments(Path.Combine(AppContext.BaseDirectory, "MyProject.HttpApi.xml"));
                 });
         }
 

@@ -12,3 +12,5 @@ D:\VS\aspnet-core\src\MyProject.EntityFrameworkCore\obj\Debug\netcoreapp3.1\MyPr
 D:\VS\aspnet-core\src\MyProject.EntityFrameworkCore\obj\Debug\netcoreapp3.1\MyProject.EntityFrameworkCore.csproj.CopyComplete
 D:\VS\aspnet-core\src\MyProject.EntityFrameworkCore\obj\Debug\netcoreapp3.1\MyProject.EntityFrameworkCore.dll
 D:\VS\aspnet-core\src\MyProject.EntityFrameworkCore\obj\Debug\netcoreapp3.1\MyProject.EntityFrameworkCore.pdb
+D:\VS\aspnet-core\src\MyProject.EntityFrameworkCore\bin\Debug\netcoreapp3.1\MyProject.Domain.xml
+D:\VS\aspnet-core\src\MyProject.EntityFrameworkCore\bin\Debug\netcoreapp3.1\MyProject.Domain.Shared.xml
