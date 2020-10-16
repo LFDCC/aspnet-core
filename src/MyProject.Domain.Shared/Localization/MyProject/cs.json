@@ -54,6 +54,14 @@
     "RoleRoleName": "RoleRoleName",
     "CreateRole": "CreateRole",
     "EditRole": "EditRole",
-    "RoleDeletionConfirmationMessage": "Are you sure to delete the role {0}?"
+    "RoleDeletionConfirmationMessage": "Are you sure to delete the role {0}?",
+    "Permission:UserRole": "UserRole",
+    "Menu:UserRole": "MenuUserRole",
+    "UserRole": "UserRole",
+    "UserRoleUserId": "UserRoleUserId",
+    "UserRoleRoleId": "UserRoleRoleId",
+    "CreateUserRole": "CreateUserRole",
+    "EditUserRole": "EditUserRole",
+    "UserRoleDeletionConfirmationMessage": "Are you sure to delete the userRole {0}?"
   }
 }

@@ -1,4 +1,6 @@
+using System;
 using System.Linq;
+
 using Microsoft.EntityFrameworkCore;
 
 namespace MyProject.Users
@@ -9,7 +11,7 @@ namespace MyProject.Users
         {
             if (!include)
             {
-                return queryable;
+                return queryable.Include(u => u.UserRoles).ThenInclude(ur => ur.Role);
             }
 
             return queryable

@@ -3,6 +3,8 @@ using AutoMapper;
 using MyProject.Roles;
 using MyProject.Roles.Dtos;
 using MyProject.Users;
+using MyProject.UserRoles;
+using MyProject.UserRoles.Dtos;
 using MyProject.Users.Dtos;
 
 namespace MyProject
@@ -20,6 +22,9 @@ namespace MyProject
             CreateMap<Role, RoleDto>();
             CreateMap<CreateRoleDto, Role>(MemberList.Source);
             CreateMap<UpdateRoleDto, Role>(MemberList.Source);
+            CreateMap<UserRole, UserRoleDto>();
+            CreateMap<CreateUserRoleDto, UserRole>(MemberList.Source);
+            CreateMap<UpdateUserRoleDto, UserRole>(MemberList.Source);
         }
     }
 }

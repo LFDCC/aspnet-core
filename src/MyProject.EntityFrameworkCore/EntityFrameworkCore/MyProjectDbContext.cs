@@ -5,6 +5,7 @@ using MyProject.Users;
 
 using Volo.Abp.Data;
 using Volo.Abp.EntityFrameworkCore;
+using MyProject.UserRoles;
 
 namespace MyProject.EntityFrameworkCore
 {
@@ -22,6 +23,7 @@ namespace MyProject.EntityFrameworkCore
     {
         public DbSet<User> Users { get; set; }
         public DbSet<Role> Roles { get; set; }
+        public DbSet<UserRole> UserRoles { get; set; }
 
         public MyProjectDbContext(DbContextOptions<MyProjectDbContext> options)
             : base(options)

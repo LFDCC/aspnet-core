@@ -66,11 +66,26 @@ namespace MyProject.Migrations
                     b.ToTable("AppRoles");
                 });
 
+            modelBuilder.Entity("MyProject.UserRoles.UserRole", b =>
+                {
+                    b.Property<Guid>("UserId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<Guid>("RoleId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.HasKey("UserId", "RoleId");
+
+                    b.HasIndex("RoleId");
+
+                    b.ToTable("AppUserRoles");
+                });
+
             modelBuilder.Entity("MyProject.Users.User", b =>
                 {
-                    b.Property<string>("UserName")
-                        .HasColumnType("nvarchar(50)")
-                        .HasMaxLength(50);
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<DateTime>("CreationTime")
                         .HasColumnName("CreationTime")
@@ -92,9 +107,6 @@ namespace MyProject.Migrations
                         .HasColumnType("nvarchar(50)")
                         .HasMaxLength(50);
 
-                    b.Property<Guid>("Id")
-                        .HasColumnType("uniqueidentifier");
-
                     b.Property<bool>("IsDeleted")
                         .ValueGeneratedOnAdd()
                         .HasColumnName("IsDeleted")
@@ -109,7 +121,7 @@ namespace MyProject.Migrations
                         .HasColumnName("LastModifierId")
                         .HasColumnType("uniqueidentifier");
 
-                    b.Property<string>("PassWord")
+                    b.Property<string>("Password")
                         .HasColumnType("nvarchar(50)")
                         .HasMaxLength(50);
 
@@ -121,17 +133,31 @@ namespace MyProject.Migrations
                         .HasColumnType("nvarchar(50)")
                         .HasMaxLength(50);
 
-                    b.Property<string>("RoleName")
+                    b.Property<string>("UserName")
                         .HasColumnType("nvarchar(50)")
                         .HasMaxLength(50);
 
-                    b.HasKey("UserName")
-                        .HasName("PK_User_UserName");
+                    b.HasKey("Id");
 
-                    b.HasIndex("RoleName")
-                        .HasName("ID_Use_RoleName");
+                    b.HasIndex("UserName")
+                        .HasName("ID_User_UserName");
 
                     b.ToTable("AppUsers");
+                });
+
+            modelBuilder.Entity("MyProject.UserRoles.UserRole", b =>
+                {
+                    b.HasOne("MyProject.Roles.Role", "Role")
+                        .WithMany("UserRoles")
+                        .HasForeignKey("RoleId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("MyProject.Users.User", "User")
+                        .WithMany("UserRoles")
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
                 });
 #pragma warning restore 612, 618
         }

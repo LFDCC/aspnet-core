@@ -13,6 +13,6 @@ namespace MyProject.Users.Dtos
         /// <summary>
         /// 密码
         /// </summary>
-        public string PassWord { get; set; }
+        public string Password { get; set; }
     }
 }

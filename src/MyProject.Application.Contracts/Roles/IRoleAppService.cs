@@ -5,13 +5,7 @@ using Volo.Abp.Application.Services;
 
 namespace MyProject.Roles
 {
-    public interface IRoleAppService :
-        ICrudAppService< 
-            RoleDto, 
-            Guid, 
-            PagedAndSortedResultRequestDto,
-            CreateRoleDto,
-            UpdateRoleDto>
+    public interface IRoleAppService : IApplicationService
     {
 
     }

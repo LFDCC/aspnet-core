@@ -1,5 +1,7 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.IdentityModel.Tokens.Jwt;
+using System.Linq;
 using System.Security.Claims;
 using System.Text;
 
@@ -23,13 +25,13 @@ namespace MyProject.JwtSetttings
         /// </summary>
         /// <param name="userId"></param>
         /// <param name="userName"></param>
-        /// <param name="userRole"></param>
+        /// <param name="userRoles"></param>
         /// <returns></returns>
-        public Token GetToken(Guid userId, string userName, string userRole)
+        public Token GetToken(Guid userId, string userName, string[] userRoles)
         {
             var token = new Token
             {
-                Access_Token = GetAccessToken(userId, userName, userRole),
+                Access_Token = GetAccessToken(userId, userName, userRoles),
                 Refresh_Token = GetRefreshToken(userName)
             };
             return token;
@@ -64,18 +66,21 @@ namespace MyProject.JwtSetttings
         /// </summary>
         /// <param name="userId"></param>
         /// <param name="userName"></param>
-        /// <param name="userRole"></param>
+        /// <param name="userRoles"></param>
         /// <returns></returns>
-        private AccessToken GetAccessToken(Guid userId, string userName, string userRole)
+        private AccessToken GetAccessToken(Guid userId, string userName, string[] userRoles)
         {
             var access_token = new AccessToken();
 
-            var claims = new[]
+            var claims = new List<Claim>
             {
                 new Claim(ClaimTypes.NameIdentifier,userId.ToString()),
-                new Claim(ClaimTypes.Name,userName),
-                new Claim(ClaimTypes.Role,userRole)
+                new Claim(ClaimTypes.Name,userName)
             };
+            for (int i = 0; i < userRoles.Length; i++)
+            {
+                claims.Add(new Claim(ClaimTypes.Role, userRoles[i]));
+            }
             var expires = DateTime.Now.AddMinutes(jwtSetting.AccessExpiration);
             var key = new SymmetricSecurityKey(Encoding.ASCII.GetBytes(jwtSetting.Secret));
             var credentials = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);

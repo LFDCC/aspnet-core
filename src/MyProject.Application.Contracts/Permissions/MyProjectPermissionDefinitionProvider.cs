@@ -22,6 +22,11 @@ namespace MyProject.Permissions
             rolePermission.AddChild(MyProjectPermissions.Role.Create, L("Permission:Create"));
             rolePermission.AddChild(MyProjectPermissions.Role.Update, L("Permission:Update"));
             rolePermission.AddChild(MyProjectPermissions.Role.Delete, L("Permission:Delete"));
+
+            var userRolePermission = myGroup.AddPermission(MyProjectPermissions.UserRole.Default, L("Permission:UserRole"));
+            userRolePermission.AddChild(MyProjectPermissions.UserRole.Create, L("Permission:Create"));
+            userRolePermission.AddChild(MyProjectPermissions.UserRole.Update, L("Permission:Update"));
+            userRolePermission.AddChild(MyProjectPermissions.UserRole.Delete, L("Permission:Delete"));
         }
 
         private static LocalizableString L(string name)

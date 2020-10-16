@@ -1,50 +1,30 @@
 ﻿using System;
+
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Hosting;
-using Serilog;
-using Serilog.Events;
+using Microsoft.Extensions.Logging;
 
 namespace MyProject
 {
     public class Program
     {
-        public static int Main(string[] args)
+        public static void Main(string[] args)
         {
-            Log.Logger = new LoggerConfiguration()
-#if DEBUG
-                .MinimumLevel.Debug()
-#else
-                .MinimumLevel.Information()
-#endif
-                .MinimumLevel.Override("Microsoft", LogEventLevel.Information)
-                .Enrich.FromLogContext()
-                .WriteTo.Async(c => c.File("Logs/logs.txt"))
-                .CreateLogger();
-
-            try
-            {
-                Log.Information("Starting MyProject.HttpApi.Host.");
-                CreateHostBuilder(args).Build().Run();
-                return 0;
-            }
-            catch (Exception ex)
-            {
-                Log.Fatal(ex, "Host terminated unexpectedly!");
-                return 1;
-            }
-            finally
-            {
-                Log.CloseAndFlush();
-            }
+            CreateHostBuilder(args).Build().Run();
         }
 
-        internal static IHostBuilder CreateHostBuilder(string[] args) =>
+        public static IHostBuilder CreateHostBuilder(string[] args) =>
             Host.CreateDefaultBuilder(args)
+                .ConfigureLogging(loggingBuilder =>
+                {
+                    loggingBuilder.AddFilter("System", LogLevel.Error); //过滤掉系统默认的一些日志
+                    loggingBuilder.AddFilter("Microsoft", LogLevel.Error);//过滤掉系统默认的一些日志
+                    loggingBuilder.AddLog4Net("Config/log4net.config");//需要配置文件
+                })
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
                     webBuilder.UseStartup<Startup>();
                 })
-                .UseAutofac()
-                .UseSerilog();
+                .UseAutofac();
     }
 }

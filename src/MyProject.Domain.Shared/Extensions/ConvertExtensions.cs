@@ -160,7 +160,7 @@ namespace MyProject.Extensions
         /// 时间格式转换为字符串
         /// </summary>
         /// <param name="date"></param>
-        /// <param name="format"></param>
+        /// <param name="formater"></param>
         /// <param name="cultureInfo"></param>
         /// <returns></returns>
         public static string TryToDateTime(this DateTime date, string formater = "MMMM dd, yyyy HH:mm:ss", string cultureInfo = "en-us")

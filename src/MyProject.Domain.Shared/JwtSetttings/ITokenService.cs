@@ -6,7 +6,7 @@ namespace MyProject.JwtSetttings
 {
     public interface ITokenService
     {
-        Token GetToken(Guid userId, string userName, string userRole);
+        Token GetToken(Guid userId, string userName, string[] userRoles);
         string ValidateRefreshToken(string refresh_token);
     }
 }

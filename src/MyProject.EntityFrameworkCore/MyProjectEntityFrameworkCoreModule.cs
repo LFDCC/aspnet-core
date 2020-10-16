@@ -1,3 +1,4 @@
+using MyProject.UserRoles;
 using Microsoft.Extensions.DependencyInjection;
 
 using MyProject.Roles;
@@ -26,9 +27,10 @@ namespace MyProject.EntityFrameworkCore
             {
                 /* Remove "includeAllEntities: true" to create
                  * default repositories only for aggregate roots */
-                options.AddDefaultRepositories(includeAllEntities: true);
+                //options.AddDefaultRepositories(includeAllEntities: true);
                 options.AddRepository<User, UserRepository>();
                 options.AddRepository<Role, RoleRepository>();
+                options.AddRepository<UserRole, UserRoleRepository>();
             });
 
             Configure<AbpDbContextOptions>(options =>

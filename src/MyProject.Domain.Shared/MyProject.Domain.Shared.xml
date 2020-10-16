@@ -91,7 +91,7 @@
             时间格式转换为字符串
             </summary>
             <param name="date"></param>
-            <param name="format"></param>
+            <param name="formater"></param>
             <param name="cultureInfo"></param>
             <returns></returns>
         </member>
@@ -498,13 +498,13 @@
             jwt配置
             </summary>
         </member>
-        <member name="M:MyProject.JwtSetttings.TokenService.GetToken(System.Guid,System.String,System.String)">
+        <member name="M:MyProject.JwtSetttings.TokenService.GetToken(System.Guid,System.String,System.String[])">
             <summary>
             创建access_toekn refresh_token
             </summary>
             <param name="userId"></param>
             <param name="userName"></param>
-            <param name="userRole"></param>
+            <param name="userRoles"></param>
             <returns></returns>
         </member>
         <member name="M:MyProject.JwtSetttings.TokenService.ValidateRefreshToken(System.String)">
@@ -514,13 +514,13 @@
             <param name="refresh_token"></param>
             <returns></returns>
         </member>
-        <member name="M:MyProject.JwtSetttings.TokenService.GetAccessToken(System.Guid,System.String,System.String)">
+        <member name="M:MyProject.JwtSetttings.TokenService.GetAccessToken(System.Guid,System.String,System.String[])">
             <summary>
             创建access_token
             </summary>
             <param name="userId"></param>
             <param name="userName"></param>
-            <param name="userRole"></param>
+            <param name="userRoles"></param>
             <returns></returns>
         </member>
         <member name="M:MyProject.JwtSetttings.TokenService.GetRefreshToken(System.String)">

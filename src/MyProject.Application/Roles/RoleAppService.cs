@@ -1,4 +1,5 @@
 using System;
+using System.Threading.Tasks;
 
 using Microsoft.AspNetCore.Authorization;
 
@@ -10,8 +11,8 @@ using Volo.Abp.Application.Services;
 
 namespace MyProject.Roles
 {
-    [Authorize(Policy = "admin")]
-    public class RoleAppService : CrudAppService<Role, RoleDto, Guid, PagedAndSortedResultRequestDto, CreateRoleDto, UpdateRoleDto>,
+    [Authorize]
+    public class RoleAppService : MyProjectAppService,
         IRoleAppService
     {
         //protected override string GetPolicyName { get; set; } = MyProjectPermissions.Role.Default;
@@ -22,9 +23,10 @@ namespace MyProject.Roles
 
         private readonly IRoleRepository _repository;
 
-        public RoleAppService(IRoleRepository repository) : base(repository)
+        public RoleAppService(IRoleRepository repository)
         {
             _repository = repository;
         }
+
     }
 }

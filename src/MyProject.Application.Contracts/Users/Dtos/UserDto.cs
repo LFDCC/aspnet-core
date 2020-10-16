@@ -1,4 +1,8 @@
 using System;
+using System.Collections.Generic;
+
+using MyProject.UserRoles.Dtos;
+
 using Volo.Abp.Application.Dtos;
 
 namespace MyProject.Users.Dtos
@@ -14,6 +18,6 @@ namespace MyProject.Users.Dtos
 
         public string Phone { get; set; }
 
-        public string RoleName { get; set; }
+        public List<UserRoleDto> UserRoles { get; set; }
     }
 }

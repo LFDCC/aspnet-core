@@ -1,4 +1,5 @@
-﻿using System.Threading.Tasks;
+﻿using System.Linq;
+using System.Threading.Tasks;
 
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
@@ -34,7 +35,7 @@ namespace MyProject.Controllers
             var user = await _userAppService.Login(loginDto);
             if (user != null)
             {
-                var token = _tokenService.GetToken(user.Id, user.UserName, user.RoleName);
+                var token = _tokenService.GetToken(user.Id, user.UserName, user.UserRoles.Select(t => t.Role.RoleName).ToArray());
                 result.Code = ResultCode.Success;
                 result.Data = token;
                 return result;

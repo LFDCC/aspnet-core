@@ -1,4 +1,7 @@
+using System.Linq;
 using System.Threading.Tasks;
+
+using AutoMapper;
 
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
@@ -7,9 +10,8 @@ using MyProject.HttpResult;
 using MyProject.Users.Dtos;
 
 using Volo.Abp;
-using Volo.Abp.Security.Claims;
+using Volo.Abp.Domain.Repositories;
 using Volo.Abp.Security.Encryption;
-using Volo.Abp.Users;
 
 namespace MyProject.Users
 {
@@ -17,11 +19,11 @@ namespace MyProject.Users
     [Route("api/[controller]")]
     public class UserAppService : MyProjectAppService, IUserAppService
     {
-        private readonly IUserRepository _repository;
+        private readonly IUserRepository _userRepository;
         private readonly IStringEncryptionService _stringEncryptionService;
         public UserAppService(IUserRepository repository, IStringEncryptionService stringEncryptionService)
         {
-            _repository = repository;
+            _userRepository = repository;
             _stringEncryptionService = stringEncryptionService;
         }
 
@@ -29,8 +31,8 @@ namespace MyProject.Users
         [RemoteService(false)]
         public async Task<UserDto> Login(LoginDto loginDto)
         {
-            var password = _stringEncryptionService.Encrypt(loginDto.PassWord);
-            var user = await _repository.FindAsync(t => t.UserName == loginDto.UserName && t.PassWord == password);
+            var password = _stringEncryptionService.Encrypt(loginDto.Password);
+            var user = await AsyncExecuter.FirstOrDefaultAsync(_userRepository.GetAll().Where(t => t.UserName == loginDto.UserName && t.Password == password));
 
             return ObjectMapper.Map<User, UserDto>(user);
         }
@@ -38,7 +40,7 @@ namespace MyProject.Users
         [Route("info")]
         public async Task<Result<UserInfoDto>> GetInfo()
         {
-            var user = await _repository.FindAsync(t => t.Id == CurrentUser.Id);
+            var user = await _userRepository.FindAsync(t => t.Id == CurrentUser.Id);
             var userinfo = new UserInfoDto
             {
                 Name = user.RealName,

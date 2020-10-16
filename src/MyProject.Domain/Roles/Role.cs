@@ -1,8 +1,8 @@
 using System;
 using System.Collections.Generic;
-using System.Text;
+using System.Collections.ObjectModel;
 
-using MyProject.Users;
+using MyProject.UserRoles;
 
 using Volo.Abp.Domain.Entities.Auditing;
 
@@ -12,6 +12,7 @@ namespace MyProject.Roles
     {
         public string RoleName { get; set; }
 
+        public virtual ICollection<UserRole> UserRoles { get; set; }
 
         protected Role()
         {
@@ -23,6 +24,7 @@ namespace MyProject.Roles
         ) : base(id)
         {
             RoleName = roleName;
+            UserRoles = new Collection<UserRole>();
         }
     }
 }

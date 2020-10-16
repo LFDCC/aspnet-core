@@ -9,7 +9,7 @@
             用户名
             </summary>
         </member>
-        <member name="P:MyProject.Users.Dtos.LoginDto.PassWord">
+        <member name="P:MyProject.Users.Dtos.LoginDto.Password">
             <summary>
             密码
             </summary>
