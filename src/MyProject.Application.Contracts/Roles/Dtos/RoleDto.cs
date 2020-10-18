@@ -12,6 +12,6 @@ namespace MyProject.Roles.Dtos
     {
         public string RoleName { get; set; }
 
-        public List<UserRoleDto> UserRoles { get; set; }
+        public ICollection<UserRoleDto> UserRoles { get; set; }
     }
 }

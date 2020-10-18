@@ -29,6 +29,9 @@ namespace MyProject.EntityFrameworkCore
         {
             base.OnModelCreating(builder);
 
+            builder.ConfigurePermissionManagement();
+            builder.ConfigureAuditLogging();
+
             builder.ConfigureMyProject();
         }
     }

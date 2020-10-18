@@ -18,6 +18,6 @@ namespace MyProject.Users.Dtos
 
         public string Phone { get; set; }
 
-        public List<UserRoleDto> UserRoles { get; set; }
+        public ICollection<UserRoleDto> UserRoles { get; set; }
     }
 }

@@ -32,6 +32,7 @@ using Nito.AsyncEx;
 using MyProject.Filters;
 using Microsoft.AspNetCore.Mvc;
 using Volo.Abp.AspNetCore.Mvc.ExceptionHandling;
+using Volo.Abp.Auditing;
 
 namespace MyProject
 {
@@ -51,7 +52,10 @@ namespace MyProject
             var configuration = context.Services.GetConfiguration();
             var hostingEnvironment = context.Services.GetHostingEnvironment();
 
+
+
             ConfigureFilters();
+            ConfigureAuditingLog();
             ConfigureConventionalControllers();
             ConfigureAuthentication(context, configuration);
             ConfigureAuthorization(context, configuration);
@@ -74,6 +78,17 @@ namespace MyProject
                 }
                 options.Filters.Add(typeof(ExceptionFilter));
                 options.Filters.Add<ActionFilter>();
+            });
+        }
+        /// <summary>
+        /// 配置审计日志
+        /// </summary>
+        private void ConfigureAuditingLog()
+        {
+            Configure<AbpAuditingOptions>(options =>
+            {
+                options.ApplicationName = "MyProject";
+                options.IsEnabled = true; //启用审计日志
             });
         }
         /// <summary>

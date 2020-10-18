@@ -16,6 +16,11 @@
             配置Filter
             </summary>
         </member>
+        <member name="M:MyProject.MyProjectHttpApiHostModule.ConfigureAuditingLog">
+            <summary>
+            配置审计日志
+            </summary>
+        </member>
         <member name="M:MyProject.MyProjectHttpApiHostModule.ConfigureVirtualFileSystem(Volo.Abp.Modularity.ServiceConfigurationContext)">
             <summary>
             虚拟文件系统

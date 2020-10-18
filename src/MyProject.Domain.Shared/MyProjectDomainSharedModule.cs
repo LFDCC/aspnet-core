@@ -1,14 +1,22 @@
 ﻿
 using MyProject.Localization;
 
+using Volo.Abp.AuditLogging;
+using Volo.Abp.BackgroundJobs;
 using Volo.Abp.Localization;
 using Volo.Abp.Localization.ExceptionHandling;
 using Volo.Abp.Modularity;
+using Volo.Abp.PermissionManagement;
+using Volo.Abp.SettingManagement;
 using Volo.Abp.Validation.Localization;
 using Volo.Abp.VirtualFileSystem;
 
 namespace MyProject
 {
+    [DependsOn(
+    typeof(AbpAuditLoggingDomainSharedModule),
+    typeof(AbpPermissionManagementDomainSharedModule)
+    )]
     public class MyProjectDomainSharedModule : AbpModule
     {
         public override void PreConfigureServices(ServiceConfigurationContext context)

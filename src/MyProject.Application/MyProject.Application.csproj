@@ -8,6 +8,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Volo.Abp.PermissionManagement.Application" Version="3.2.1" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\MyProject.Domain\MyProject.Domain.csproj" />
     <ProjectReference Include="..\MyProject.Application.Contracts\MyProject.Application.Contracts.csproj" />
   </ItemGroup>

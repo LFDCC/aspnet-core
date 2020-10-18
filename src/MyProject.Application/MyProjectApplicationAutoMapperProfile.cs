@@ -6,6 +6,8 @@ using MyProject.Users;
 using MyProject.UserRoles;
 using MyProject.UserRoles.Dtos;
 using MyProject.Users.Dtos;
+using Volo.Abp.AuditLogging;
+using MyProject.AuditLogs.Dtos;
 
 namespace MyProject
 {
@@ -25,6 +27,9 @@ namespace MyProject
             CreateMap<UserRole, UserRoleDto>();
             CreateMap<CreateUserRoleDto, UserRole>(MemberList.Source);
             CreateMap<UpdateUserRoleDto, UserRole>(MemberList.Source);
+
+            CreateMap<AuditLog, AuditLogDto>();
+            CreateMap<AuditLogAction, AuditLogActionDto>();
         }
     }
 }
