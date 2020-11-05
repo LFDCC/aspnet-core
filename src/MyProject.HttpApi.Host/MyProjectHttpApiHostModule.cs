@@ -52,8 +52,6 @@ namespace MyProject
             var configuration = context.Services.GetConfiguration();
             var hostingEnvironment = context.Services.GetHostingEnvironment();
 
-
-
             ConfigureFilters();
             ConfigureAuditingLog();
             ConfigureConventionalControllers();
@@ -69,6 +67,7 @@ namespace MyProject
         /// </summary>
         private void ConfigureFilters()
         {
+
             Configure<MvcOptions>(options =>
             {
                 var index = options.Filters.ToList().FindIndex(filter => filter is ServiceFilterAttribute attr && attr.ServiceType.Equals(typeof(AbpExceptionFilter)));
