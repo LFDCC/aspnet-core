@@ -9,6 +9,9 @@ using Volo.Abp.Security.Claims;
 
 namespace MyProject.Permissions
 {
+    /// <summary>
+    /// 可以自定义权限校验规则
+    /// </summary>
     public class RolePermissionValueProvider1 : PermissionValueProvider
     {
         public const string ProviderName = "R";

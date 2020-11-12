@@ -16,10 +16,10 @@ namespace MyProject
     {
         public override void ConfigureServices(ServiceConfigurationContext context)
         {
-            Configure<AbpPermissionOptions>(options =>
-            {
-                options.ValueProviders.Add<RolePermissionValueProvider1>();
-            });
+            //Configure<AbpPermissionOptions>(options =>
+            //{
+            //    options.ValueProviders.Add<RolePermissionValueProvider1>();
+            //});
         }
         public override void PreConfigureServices(ServiceConfigurationContext context)
         {

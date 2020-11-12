@@ -1,16 +1,14 @@
 using System.Linq;
 using System.Threading.Tasks;
 
-using AutoMapper;
-
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 using MyProject.HttpResult;
+using MyProject.Permissions;
 using MyProject.Users.Dtos;
 
 using Volo.Abp;
-using Volo.Abp.Domain.Repositories;
 using Volo.Abp.Security.Encryption;
 
 namespace MyProject.Users

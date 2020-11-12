@@ -13,6 +13,7 @@ namespace MyProject.Permissions
             public const string Update = Default + ".Update";
             public const string Create = Default + ".Create";
             public const string Delete = Default + ".Delete";
+            public const string ManagePermissions = Default + ".ManagePermissions";
         }
 
         public class Role
@@ -21,6 +22,7 @@ namespace MyProject.Permissions
             public const string Update = Default + ".Update";
             public const string Create = Default + ".Create";
             public const string Delete = Default + ".Delete";
+            public const string ManagePermissions = Default + ".ManagePermissions";
         }
 
         public class UserRole
